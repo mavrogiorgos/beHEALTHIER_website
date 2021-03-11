@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<title>Πληροφορίες | beHEALTHIER</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+<head>
+  <link rel="icon" href="Images/beHEALTHIER_logo_v2.png" type="image/gif">
+  
+  <style>
+	.navbar {
+	  overflow: hidden;
+	  background-color: #333;
+	  font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.navbar a {
+	  float: left;
+	  font-size: 16px;
+	  color: white;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	}
+
+	.dropdown {
+	  float: left;
+	  overflow: hidden;
+	}
+
+	.dropdown .dropbtn {
+	  cursor: pointer;
+	  font-size: 16px;  
+	  border: none;
+	  outline: none;
+	  color: white;
+	  padding: 14px 16px;
+	  background-color: inherit;
+	  font-family: inherit;
+	  margin: 0;
+	}
+
+	.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+	  background-color: midnightblue;
+	}
+
+	.dropdown-content {
+	  display: none;
+	  position: absolute;
+	  background-color: #f9f9f9;
+	  min-width: 160px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
+	}
+
+	.dropdown-content a {
+	  float: none;
+	  color: black;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	  text-align: left;
+	}
+
+	.dropdown-content a:hover {
+	  background-color: #ddd;
+	}
+
+	.show {
+	  display: block;
+	}
+	
+	
+	
+	#menu {
+	  width: 30px;
+	  height: 3px;
+	  background-color: white;
+	  margin: 3px 0px;
+	}
+	
+	
+	#more {display: none;}
+
+	</style>
+  
+  
+  
+  
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-midnight w3-padding w3-card">
+  
+    <a href="home.html" class="w3-bar-item w3-left"><img src="Images/beHEALTHIER_logo_v1.png" width="40" height="40" style="border-radius: 50%;"></a>
+	<div class="dropdown w3-right">
+	  <button class="dropbtn w3-hide-large w3-hide-medium" onclick="myFunction()">
+	    <div id="menu"></div>
+		<div id="menu"></div>
+		<div id="menu"></div>
+		<div id="menu"></div>
+		<div id="menu"></div>
+		<i class="fa fa-caret-down"></i>
+	  </button>
+	  <div class="dropdown-content w3-hide-large w3-hide-medium" id="myDropdown" style="right:0">
+		<a href="info.html" class="w3-bar-item w3-hover-red w3-button">Πληροφορίες</a>
+		<a href="partners.html" class="w3-bar-item w3-hover-red w3-button">Συμμετέχοντες</a>
+		<a href="papers.html" class="w3-bar-item w3-hover-red w3-button">Δημοσιεύσεις</a>
+		<a href="news.html" class="w3-bar-item w3-hover-red w3-button">Νέα</a>
+		<a href="mailto:be_healthier@googlegroups.com" class="w3-bar-item w3-hover-red w3-button">Επικοινωνία</a>
+	  </div>
+	  <div class="w3-right w3-hide-small">
+	  <a href="info.html" class="w3-bar-item w3-hover-red w3-button">Πληροφορίες</a>
+      <a href="partners.html" class="w3-bar-item w3-hover-red w3-button">Συμμετέχοντες</a>
+	  <a href="papers.html" class="w3-bar-item w3-hover-red w3-button">Δημοσιεύσεις</a>
+      <a href="news.html" class="w3-bar-item w3-hover-red w3-button">Νέα</a>
+	  <a href="mailto:be_healthier@googlegroups.com" class="w3-bar-item w3-hover-red w3-button">Επικοινωνία</a>
+    </div>
+    </div> 
+  
+</div>
+
+<!-- Header -->
+<div class="w3-display-container w3-content w3-wide" style="max-width:100%; height:300px; background-color:#35a6d8; color:white;">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge ">Πληροφορίες</h1>
+  </div>
+</div>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:100%;">
+
+
+<!-- About Section -->
+<div class="w3-container" id="about" style="width:80%; margin: auto;">
+<h3 class="w3-border-bottom w3-border-black w3-padding-16">Σχετικά με το έργο</h3>
+  
+    <p style=" text-align: justify; text-justify: inter-word;  margin: auto;">Το <b>beHEALTHIER</b> αποτελεί ένα εθνικό έργο που συγχρηματοδοτείται από την Ελλάδα και την Ευρωπαϊκή Ένωση. Ξεκίνησε τον Ιούνιο του 2020 και θα ολοκληρωθεί τον Δεκέμβριο του 2022.
+	Στόχος είναι η ανάπτυξη μιας καινοτόμου πλατφόρμας για τη Διαχείριση Ολιστικών Δεδομένων Υγείας με σκοπό την αποτελεσματική εκμετάλλευσή τους για τη χάραξη πολιτικών υγείας.
+	<br>
+	Το <b>beHEALTHIER</b> στοχεύει στην ανάπτυξη μιας καινοτόμου πλατφόρμας για τη Διαχείριση Ολιστικών Δεδομένων Υγείας με σκοπό την αποτελεσματική εκμετάλλευσή τους για τη χάραξη πολιτικών υγείας. Ειδικότερα, στο έργο προτείνεται μια διαδικασία συλλογής και διαχείρισης ιατρικών δεδομένων που αμέσως ή εμμέσως αφορούν την υγεία ενός ατόμου σε τρία (3) στάδια. Το πρώτο στάδιο είναι η συλλογή των δεδομένων και η δημιουργία των Εκτεταμένων Φακέλων Υγείας. Το δεύτερο είναι η εφαρμογή εργαλείων ανάλυσης στα δεδομένα αυτά, ενώ το τρίτο είναι η δημιουργία πολιτικών για τη Δημόσια Υγεία ή ενημέρωση των ήδη υπάρχουσων με βάση τα αποτελέσματα της ανάλυσης.
+	<br><br>
+	<div width="100%" style="text-align:center;">
+	<img class="w3-image" src="Images/beHEALTHIER_platform.png" alt="Health" width="70%" style="border-style: groove; border-color: midnightblue">
+	</div>
+	<br>
+	<div>Κάποιες από τις καινοτομίες του έργου, που συγχρόνως έχουν τεράστια ερευνητική αξία, αποτελούν τα παρακάτω:</div>
+	<ul style="list-style-type:square">
+	  <li>Εκτεταμένοι Φάκελοι Υγείας (Extended Health Records - XHRs)</li>
+	  <li>Δίκτυα XHRs</li>
+	  <li>Απεικόνιση Δεδομένων </li>
+	  <li>Ανάπτυξη Πολιτικών Υγείας </li>
+	  <li>Διαχείριση Μεγάλων Δεδομένων σε Πραγματικό Χρόνο</li>
+	</ul>
+    </p>
+  
+  </div>
+  
+  
+  <!-- Aims Section -->
+<div class="w3-container" id="aims" style="width:80%; margin: auto;">
+<h3 class="w3-border-bottom w3-border-black w3-padding-16">Στόχοι</h3>
+  
+    <p style=" text-align: justify; text-justify: inter-word;  margin: auto;">
+	Όσον αφορά τους στόχους του beHEALTHIER, αυτοί χωρίζονται σε δύο (2) επιμέρους κατηγορίες:
+	<ol>
+	  <li style="color:#003366;"><b>Επιστημονικοί και Τεχνικοί Στόχοι</b></li>
+	  <li style="color:#8b0000;"><b>Κοινωνικοί και Εμπορικοί Στόχοι</b></li>
+	</ol>
+	<br>
+	Συνοπτικά, οι στόχοι του έργου είναι οι ακόλουθοι: 
+	<ul style="list-style-type:square">
+	  <li style="color:#003366;">Αξιοποίηση ετερογενών πηγών δεδομένων και απόκτηση συλλογικής γνώσης μέσω των δικτύων XHRs</li>
+	  <li style="color:#003366;">Μοντελοποίηση, και δημιουργία πολιτικών υγείας αξιοποιώντας τα αποτελέσματα των μηχανισμών ανάλυσης δεδομένων του beHEALTHIER</li>
+	  <li style="color:#003366;">Διαχείριση μεγάλων δεδομένων που προέρχονται από διαφορετικές πηγές, με αποδοτικό τρόπο</li>
+	  <li style="color:#003366;">Απεικόνιση των αποτελεσμάτων των τεχνικών ανάλυσης δεδομένων με ουσιαστικό και κατανοητό τρόπο</li>
+	  <li style="color:#8b0000;">Επιστημονική πρόοδος μέσω της ενίσχυσης της ιατρικής γνώσης και της δημόσιας υγείας</li>
+	  <li style="color:#8b0000;">Υιοθέτηση των μηχανισμών του beHEALTHIER σε διαφορετικούς επιστημονικούς τομείς</li>
+	</ul>
+    </p>
+  
+  </div>
+  
+  
+  
+  
+  <!-- Results Section -->
+<div class="w3-container" id="results" style="width:80%; margin: auto;">
+<h3 class="w3-border-bottom w3-border-black w3-padding-16">Αποτελέσματα</h3>
+  
+    <p style=" text-align: justify; text-justify: inter-word;  margin: auto;">Το beHEALTHIER θα επιχειρήσει να αντιμετωπίσει προκλήσεις που εμφανίζονται στον τομέα 
+	της υγείας, αξιοποιώντας τα παρακάτω:
+	<ul style="list-style-type:square">
+	  <li style="text-align: justify; text-justify: inter-word;"><b>Εκτεταμένοι Φάκελοι Υγείας - ΕΦΥ</b>: Κατασκευή νέου είδους φακέλων υγείας που ενσωματώνει 
+		διαφορετικούς τύπους δεδομένων, όπως υγειονομικά 
+		και κοινωνικά δεδομένα, δεδομένα κοινωνικής μέριμνας, 
+		δεδομένα υπό μορφή βιοσημάτων από ιατρικές συσκευές και 
+		δεδομένα υγειονομικής φροντίδας και περίθαλψης ενός ασθενούς</li>
+	  <li style="text-align: justify; text-justify: inter-word;"><b>Δίκτυα ΕΦΥ</b>: Αξιοποίηση διαφορετικών τεχνικών εξόρυξης δεδομένων, 
+		με έμφαση σε αλγορίθμους ομαδοποίησης και ταξινόμησης προκειμένου να εντοπιστούν συσχετίσεις μεταξύ των ΕΦΥ</li>
+	  <li style="text-align: justify; text-justify: inter-word;"><b>Ανάλυση Δεδομένων</b>: Υλοποίηση προβλέψεων και 
+		παροχή πληροφοριών σχετικά με συγκεκριμένα ρίσκα για την υγεία τόσο σε επίπεδο πληθυσμού όσο και σε ατομικό επίπεδο, 
+		εφαρμόζοντας ποικίλες τεχνικές μηχανικής μάθησης</li>
+	  <li style="text-align: justify; text-justify: inter-word;"><b>Διαμόρφωση Πολιτικών Υγείας</b>: Δημιουργία νέων πολιτικών 
+		για τη δημόσια υγεία βάσει των καταχωρήσεων των υπεύθυνων χάραξης πολιτικών, λαμβάνοντας υπόψη τα αποτελέσματα 
+		που προκύπτουν από την Ανάλυση Δεδομένων</li>
+	</ul>
+    </p>
+  
+  </div>
+
+  
+  
+ 
+
+<!-- End page content -->
+</div>
+
+
+<!-- social media -->
+<div class="w3-section" style="position:fixed; right:0; bottom:5%; background-color:midnightblue; color:white; font-size:200%;">
+<div style="padding:3px;">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+	<br>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+	<br>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+	<br>
+	<span class="iconify w3-hover-opacity" data-icon="fa-brands:researchgate" data-inline="false"></span>
+</div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-midnight w3-padding-16">
+  <p><img src="Images/eu2.png" alt="espa" style="width:33%"></p>
+  <p style="font-size:50%"></p>
+</footer>
+
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+
+</body>
+</html>

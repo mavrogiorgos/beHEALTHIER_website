@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<title>Byte | beHEALTHIER</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+<head>
+  <link rel="icon" href="Images/beHEALTHIER_logo_v2.png" type="image/gif">
+  
+    <style>
+	.navbar {
+	  overflow: hidden;
+	  background-color: #333;
+	  font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.navbar a {
+	  float: left;
+	  font-size: 16px;
+	  color: white;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	}
+
+	.dropdown {
+	  float: left;
+	  overflow: hidden;
+	}
+
+	.dropdown .dropbtn {
+	  cursor: pointer;
+	  font-size: 16px;  
+	  border: none;
+	  outline: none;
+	  color: white;
+	  padding: 14px 16px;
+	  background-color: inherit;
+	  font-family: inherit;
+	  margin: 0;
+	}
+
+	.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+	  background-color: midnightblue;
+	}
+
+	.dropdown-content {
+	  display: none;
+	  position: absolute;
+	  background-color: #f9f9f9;
+	  min-width: 160px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
+	}
+
+	.dropdown-content a {
+	  float: none;
+	  color: black;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	  text-align: left;
+	}
+
+	.dropdown-content a:hover {
+	  background-color: #ddd;
+	}
+
+	.show {
+	  display: block;
+	}
+	
+	
+	
+	#menu {
+	  width: 30px;
+	  height: 3px;
+	  background-color: white;
+	  margin: 3px 0px;
+	}
+	
+	
+	#more {display: none;}
+
+	</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-midnight w3-padding w3-card">
+  
+    <a href="home.html" class="w3-bar-item w3-left"><img src="Images/beHEALTHIER_logo_v1.png" width="40" height="40" style="border-radius: 50%;"></a>
+	<div class="dropdown w3-right">
+	  <button class="dropbtn w3-hide-large w3-hide-medium" onclick="myFunction()">
+	    <div id="menu"></div>
+		<div id="menu"></div>
+		<div id="menu"></div>
+		<div id="menu"></div>
+		<div id="menu"></div>
+		<i class="fa fa-caret-down"></i>
+	  </button>
+	  <div class="dropdown-content w3-hide-large w3-hide-medium" id="myDropdown" style="right:0">
+		<a href="info.html" class="w3-bar-item w3-hover-red w3-button">Πληροφορίες</a>
+		<a href="partners.html" class="w3-bar-item w3-hover-red w3-button">Συμμετέχοντες</a>
+		<a href="papers.html" class="w3-bar-item w3-hover-red w3-button">Δημοσιεύσεις</a>
+		<a href="news.html" class="w3-bar-item w3-hover-red w3-button">Νέα</a>
+		<a href="mailto:be_healthier@googlegroups.com" class="w3-bar-item w3-hover-red w3-button">Επικοινωνία</a>
+	  </div>
+	  <div class="w3-right w3-hide-small">
+	  <a href="info.html" class="w3-bar-item w3-hover-red w3-button">Πληροφορίες</a>
+      <a href="partners.html" class="w3-bar-item w3-hover-red w3-button">Συμμετέχοντες</a>
+	  <a href="papers.html" class="w3-bar-item w3-hover-red w3-button">Δημοσιεύσεις</a>
+      <a href="news.html" class="w3-bar-item w3-hover-red w3-button">Νέα</a>
+	  <a href="mailto:be_healthier@googlegroups.com" class="w3-bar-item w3-hover-red w3-button">Επικοινωνία</a>
+    </div>
+    </div> 
+  
+</div>
+
+<!-- Header -->
+<div class="w3-display-container w3-content w3-wide" style="max-width:100%; height:300px; background-color:#35a6d8; color:white;">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge ">Byte Computer Α.Β.Ε.Ε.</h1>
+  </div>
+</div>
+
+
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about" style="position: relative; min-height: 100vh;">
+    <p style=" text-align: justify; text-justify: inter-word; width:80%; margin: auto;">Η εταιρεία <b>Byte</b>  συμμετέχει σε δραστηριότητες Έρευνας και Ανάπτυξης μέσω της στενής συνεργασίας που έχει με έγκριτα ακαδημαϊκά ιδρύματα και της συμμετοχής της σε συγχρηματοδοτούμενα από Ευρωπαϊκούς πόρους έργα. Οι κύριοι τομείς που εστιάζει είναι: 
+	Ηλεκτρονική Προσβασιμότητα, Υγεία και Ανεξάρτητη Διαβίωση, Τηλ-εκπαίδευση, Τεχνολογίες Περιεχομένου, Ηλεκτρονικής Διακυβέρνησης, Καινοτόμων Υπηρεσιών, Ασφάλεια, Ανοιχτά δεδομένα. 
+	Πρόσθετα, ενδεικτικά συναφή ερευνητικά έργα που συμμετέχει: 
+	<ul style="list-style-type:square">
+	<li style = "width:80%; margin: auto;"><a href="http://www.smartworkproject.eu/" class="w3-button">H2020 Smartwork </a></li> 
+	<li style = "width:80%; margin: auto;"><a href = "https://www.interopehrate.eu/" class="w3-button">fH2020 InteropEHRate</a></li> 
+	<li style = "width:80%; margin: auto;"><a href="http://veritas-project.eu/" class="w3-button">FP7 VERITAS </a></li>
+	</ul>
+	 <div style=" text-align: justify; text-justify: inter-word; width:80%; margin: auto;">
+		<p>Σε εθνικό επίπεδο, η <a href="https://www.byte.gr">Byte</a> σε συνεργασία με την ΟΤΕ ΑΕ υλοποιούν το Εθνικό Σύστημα Ηλεκτρονικής Συνταγογράφησης και τον Εθνικό Φάκελο Υγείας.
+		Στο πλαίσιο του beHEALTHIER, η Byte ως τεχνολογικός εταίρος θα επικεντρωθεί, μεταξύ άλλων, στην ανάπτυξη μεθοδολογιών και μηχανισμών αποτίμησης αξιοπιστίας πηγών και δεδομένων Υγείας, αξιοποιώντας τεχνολογίες big data, 
+		στον καθορισμό της πολιτικής ασφαλείας και προστασίας προσωπικών δεδομένων και στην αποτίμηση και διαχείριση ρίσκων. 
+		Πρόσθετα, θα συμμετέχει ενεργά σε δράσεις για την αξιοποίηση των αποτελεσμάτων του έργου.</p>
+		<a href='partners.html' class="w3-red w3-padding w3-hover-midnight w3-right" style="cursor: pointer; text-decoration:none">Επιστροφή στους Συμμετέχοντες</a>
+	</div>
+  </div>
+
+  
+
+
+
+<!-- social media -->
+<div class="w3-section" style="position:fixed; right:0; bottom:5%; background-color:midnightblue; color:white; font-size:200%;">
+<div style="padding:3px;">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+	<br>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+	<br>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+	<br>
+	<span class="iconify w3-hover-opacity" data-icon="fa-brands:researchgate" data-inline="false"></span>
+</div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-midnight w3-padding-16">
+  <p><img src="Images/eu2.png" alt="espa" style="width:33%"></p>
+  <p style="font-size:50%"></p>
+</footer>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+
+function showMore() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Περισσότερα";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Λιγότερα";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+</body>
+</html>

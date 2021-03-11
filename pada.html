@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<title>ΠΑΔΑ | beHEALTHIER</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+<head>
+  <link rel="icon" href="Images/beHEALTHIER_logo_v2.png" type="image/gif">
+  
+  <style>
+	.navbar {
+	  overflow: hidden;
+	  background-color: #333;
+	  font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.navbar a {
+	  float: left;
+	  font-size: 16px;
+	  color: white;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	}
+
+	.dropdown {
+	  float: left;
+	  overflow: hidden;
+	}
+
+	.dropdown .dropbtn {
+	  cursor: pointer;
+	  font-size: 16px;  
+	  border: none;
+	  outline: none;
+	  color: white;
+	  padding: 14px 16px;
+	  background-color: inherit;
+	  font-family: inherit;
+	  margin: 0;
+	}
+
+	.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+	  background-color: midnightblue;
+	}
+
+	.dropdown-content {
+	  display: none;
+	  position: absolute;
+	  background-color: #f9f9f9;
+	  min-width: 160px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
+	}
+
+	.dropdown-content a {
+	  float: none;
+	  color: black;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	  text-align: left;
+	}
+
+	.dropdown-content a:hover {
+	  background-color: #ddd;
+	}
+
+	.show {
+	  display: block;
+	}
+	
+	
+	
+	#menu {
+	  width: 30px;
+	  height: 3px;
+	  background-color: white;
+	  margin: 3px 0px;
+	}
+	
+	
+	#more {display: none;}
+
+	</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-midnight w3-padding w3-card">
+  
+    <a href="home.html" class="w3-bar-item w3-left"><img src="Images/beHEALTHIER_logo_v1.png" width="40" height="40" style="border-radius: 50%;"></a>
+	<div class="dropdown w3-right">
+	  <button class="dropbtn w3-hide-large w3-hide-medium" onclick="myFunction()">
+	    <div id="menu"></div>
+		<div id="menu"></div>
+		<div id="menu"></div>
+		<div id="menu"></div>
+		<div id="menu"></div>
+		<i class="fa fa-caret-down"></i>
+	  </button>
+	  <div class="dropdown-content w3-hide-large w3-hide-medium" id="myDropdown" style="right:0">
+		<a href="info.html" class="w3-bar-item w3-hover-red w3-button">Πληροφορίες</a>
+		<a href="partners.html" class="w3-bar-item w3-hover-red w3-button">Συμμετέχοντες</a>
+		<a href="papers.html" class="w3-bar-item w3-hover-red w3-button">Δημοσιεύσεις</a>
+		<a href="news.html" class="w3-bar-item w3-hover-red w3-button">Νέα</a>
+		<a href="mailto:be_healthier@googlegroups.com" class="w3-bar-item w3-hover-red w3-button">Επικοινωνία</a>
+	  </div>
+	  <div class="w3-right w3-hide-small">
+	  <a href="info.html" class="w3-bar-item w3-hover-red w3-button">Πληροφορίες</a>
+      <a href="partners.html" class="w3-bar-item w3-hover-red w3-button">Συμμετέχοντες</a>
+	  <a href="papers.html" class="w3-bar-item w3-hover-red w3-button">Δημοσιεύσεις</a>
+      <a href="news.html" class="w3-bar-item w3-hover-red w3-button">Νέα</a>
+	  <a href="mailto:be_healthier@googlegroups.com" class="w3-bar-item w3-hover-red w3-button">Επικοινωνία</a>
+    </div>
+    </div> 
+  
+</div>
+
+<!-- Header -->
+<div class="w3-display-container w3-content w3-wide" style="max-width:100%; height:300px; background-color:#35a6d8; color:white;">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge ">Πανεπιστήμιο Δυτικής Αττικής</h1>
+  </div>
+</div>
+
+
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about" style="position: relative; min-height: 100vh;">
+    <p style=" text-align: justify; text-justify: inter-word; width:80%; margin: auto;">
+		Το <b>Εργαστήριο Υγιεινής & Επιδημιολογίας </b> αποτελεί δραστήριο και παραγωγικό ερευνητικό εργαστήριο του  Τμήματος Δημόσιας και Κοινοτικής Υγείας του <b> Πανεπιστημίου Δυτικής Αττικής </b>. Έχει ως στόχο την υψηλών προδιαγραφών σύγχρονη προπτυχιακή και μεταπτυχιακή εκπαίδευση φοιτητών, 
+		καθώς και την προαγωγή της βασικής και εφαρμοσμένης έρευνας σε πολλά και καινοτόμα πεδία της δημόσιας και κοινοτικής υγείας. 
+		Το Εργαστήριο Υγιεινής & Επιδημιολογίας  συνεργάζεται με έγκριτα ερευνητικά κέντρα του εσωτερικού και του εξωτερικού και 
+		έχει την επιστημονική ευθύνη υλοποίησης για πλήθος ερευνητικών έργων και προγραμμάτων σχετικά με την προαγωγή υγείας και την 
+		αξιολόγηση της υγείας που βρίσκονται σε εξέλιξη. Η επιστημονική ομάδα του εργαστηρίου συμμετέχει σε Ευρωπαϊκές και σε Εθνικές δράσεις, 
+		είτε αυτόνομα είτε σε συνεργασία με Πανεπιστήμια και επιστημονικούς φορείς της χώρας και του εξωτερικού στα γνωστικά αντικείμενα:
+		<ul style="list-style-type:square; text-align: justify;">
+		  <li style="width:80%; margin: auto;">Επιδημιολογίας και πρόληψης χρονιών και λοιμωδών νοσημάτων</li>
+		  <li style="width:80%; margin: auto;">Προστασίας, Πρόληψης και Προαγωγής υγείας</li>
+		  <li style="width:80%; margin: auto;">Σχεδιασμού, εφαρμογής και αξιολόγησης ολοκληρωμένων προγραμμάτων πρόληψης και προαγωγής υγείας</li>
+		  <li style="width:80%; margin: auto;">Σχεδιασμού, εφαρμογής και αξιολόγησης υπηρεσιών φροντίδας υγείας</li>
+		  <li style="width:80%; margin: auto;">Ανάπτυξης Νέων ερευνητικών και εκπαιδευτικών μεθοδολογιών και εφαρμογών στον τομέα της δημόσιας και κοινοτικής υγείας.</li>
+		</ul>
+		<br>
+		<div style="width:80%; margin: auto;">Ενδεικτικά αναφέρονται :</div>
+		<ul style="list-style-type:square; text-align: justify;">
+		<li style="width:80%; margin: auto;">οι έρευνες σχετικά με την αξιολόγηση της αναπηρίας και της υγείας του πληθυσμού με την κλίμακα WHODAS 2.0 του Παγκόσμιου Οργανισμού Υγείας, </li>
+		<li style="width:80%; margin: auto;">το ευρωπαϊκό πρόγραμμα STRENCO (Strengthening multi-professional competencies in mental health in an international context, through co-production with academics, students, service users and professionals),  με στόχο την  ενίσχυση των ικανοτήτων/δεξιοτήτων της διακλαδικής 
+		ομάδας στην ψυχική υγεία μέσω της συνεργατικής/συμμετοχικής προσέγγισης για την συμπαραγωγή υπηρεσιών προαγωγής ψυχικής υγείας.</li>
+		<li style="width:80%; margin: auto;">το ευρωπαϊκό πρόγραμμα EDUVAC (Educating Vaccination Competence), με στόχο του έργου την ανάπτυξη γνώσεων και δεξιοτήτων για τους εμβολιασμούς σε διάφορες πληθυσμιακές ομάδες.</li>
+		<li style="width:80%; margin: auto;">το ευρωπαϊκό πρόγραμμα EDDIS – A Digital Program for Sexual Education in Secondary Schools με στόχο την  εκτίμηση των αναγκών των έφηβων στο πλαίσιο της σεξουαλικής υγείας και σεξουαλικής αγωγής. </li>
+		</ul>
+		<br>
+		<div style="width:80%; margin: auto;">Το Εργαστήριο συμμετέχει επίσης ως Συνεργαζόμενος Φορέας :</div>
+		<ul style="list-style-type:square; text-align: justify;">
+		<li style="width:80%; margin: auto;">στην Ευρωπαϊκή Δράση  “EU HEALTHY GATEWAYS” (Grant Agreement Number: 801493) που αφορά στην ετοιμότητα για την αντιμετώπιση διασυνοριακών κινδύνων δημόσιας υγείας στις πύλες εισόδου συμπεριλαμβανομένων λιμένων, αεροδρομίων και χερσαίων διαβάσεων και χρηματοδοτείται από το Τρίτο Πρόγραμμα για την Υγεία (2014-2020) της Ευρωπαϊκής Ένωσης. </li>
+		<li style="width:80%; margin: auto;">στην Υλοποίηση πανελλαδικής μελέτης σε συνεργασία με το Υπουργείο Υγείας για την αξιολόγηση της οργάνωσης και της υλοποίησης στις σχολικές μονάδες, δράσεων και παρεμβάσεων ενημέρωσης και ευαισθητοποίησης μαθητικού πληθυσμού στο πλαίσιο της αγωγής υγείας που αναπτύσσονται από το Υπουργείο Υγείας.</li>
+		</ul>
+		<br>
+		<div style="text-align: justify; width:80%; margin: auto;">Η συμβολή της επιστημονικής ομάδας του Εργαστηρίου Υγιεινής & Επιδημιολογίας, του Τμήματος Δημόσιας και Κοινοτικής Υγείας, του Πανεπιστημίου Δυτικής Αττικής στο έργο BeHEALTHIER, έγκειται στην συμμετοχή τους κατά κύριο λόγο, στα εξής παραδοτέα:
+		2.3.1  Προδιαγραφές Δικτύων Ολιστικών Φακέλων Υγείας
+		4.1.1 Μεθοδολογία Ανάλυσης Δεδομένων για τη Διαμόρφωση Πολιτικών Δημόσιας Υγείας 
+		4.4.1 Δημοσίευση Ερευνητικών Αποτελεσμάτων Ε.Ε.4., και 
+		5.3.1 Αποτελέσματα Πειραματικής Λειτουργίας για τη Διαμόρφωση Πολιτικών Δημόσιας Υγείας
+		Συνοπτικά, το Εργαστήριο Υγιεινής & Επιδημιολογίας θα συμμετέχει στη διαμόρφωση των ολιστικών φακέλων υγείας (Ε.Ε.2), και θα αναλάβει την Ε.Ε.4 αναφορικά με την αξιοποίηση της αξίας των δεδομένων και τη δημιουργία πολιτικών υγείας.
+		</div>
+	</p>
+	<div style="width:80%; margin: auto;">
+	<a href='partners.html' class="w3-red w3-padding w3-hover-midnight w3-right" style="cursor: pointer; text-decoration:none">Επιστροφή στους Συμμετέχοντες</a>
+	</div>
+  </div>
+
+  
+
+
+
+<!-- social media -->
+<div class="w3-section" style="position:fixed; right:0; bottom:5%; background-color:midnightblue; color:white; font-size:200%;">
+<div style="padding:3px;">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+	<br>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+	<br>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+	<br>
+	<span class="iconify w3-hover-opacity" data-icon="fa-brands:researchgate" data-inline="false"></span>
+</div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-midnight w3-padding-16">
+  <p><img src="Images/eu2.png" alt="espa" style="width:33%"></p>
+  <p style="font-size:50%"></p>
+</footer>
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+
+function showMore() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Περισσότερα";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Λιγότερα";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+</body>
+</html>
