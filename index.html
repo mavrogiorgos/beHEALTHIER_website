@@ -8,6 +8,14 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 <head>
+
+  <script>
+  //load TrackerJS
+  !function(t,n,e,o,a){function d(t){var n=~~(Date.now()/3e5),o=document.createElement(e);o.async=!0,o.src=t+"?ts="+n;var a=document.getElementsByTagName(e)[0];a.parentNode.insertBefore(o,a)}t.MooTrackerObject=a,t[a]=t[a]||function(){return t[a].q?void t[a].q.push(arguments):void(t[a].q=[arguments])},window.attachEvent?window.attachEvent("onload",d.bind(this,o)):window.addEventListener("load",d.bind(this,o),!1)}(window,document,"script","//cdn.stat-track.com/statics/moosend-tracking.min.js","mootrack");
+  //tracker has to be initialized otherwise it will generate warnings and wont sendtracking events
+  mootrack('init', 'a31477aa453f4556acc25f69e659ab82');
+  </script>
+
   <link rel="icon" href="Images/beHEALTHIER_logo_v2.png" type="image/gif">
   <!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-9DWB7Y8236"></script>
@@ -18,7 +26,7 @@
 
 	  gtag('config', 'G-9DWB7Y8236');
 	</script>
-  
+
   <style>
 	.navbar {
 	  overflow: hidden;
@@ -42,7 +50,7 @@
 
 	.dropdown .dropbtn {
 	  cursor: pointer;
-	  font-size: 16px;  
+	  font-size: 16px;
 	  border: none;
 	  outline: none;
 	  color: white;
@@ -81,17 +89,17 @@
 	.show {
 	  display: block;
 	}
-	
-	
-	
+
+
+
 	#menu {
 	  width: 30px;
 	  height: 3px;
 	  background-color: white;
 	  margin: 3px 0px;
 	}
-	
-	
+
+
 	#more {display: none;}
 	#more1 {display: none;}
 	#more2 {display: none;}
@@ -186,20 +194,43 @@
 }
 
 
+/* footer styling */
+#fb:hover {
+  color: #4267B2;
+}
 
+#linkedin:hover {
+  color: #2867B2;
+}
 
+#twitter:hover {
+  color: #1DA1F2;
+}
+
+#researchgate:hover {
+  color: #04cbbb;
+}
+
+.infobtn {
+  background-color: rgba(173,216,230,0.2);
+  border-radius: 25px;
+}
+
+.infobtn:hover {
+  background-color: rgba(173,216,230,0.5);
+}
 
 	</style>
-  
-  
-  
-  
+
+
+
+
 </head>
 <body>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top w3-midnight w3-padding w3-card">
-  
+
     <a href="https://behealthier.gr" class="w3-bar-item w3-left"><img src="Images/beHEALTHIER_logo_v1.png" width="40" height="40" style="border-radius: 50%;"></a>
 	<div class="dropdown w3-right">
 	  <button class="dropbtn w3-hide-large w3-hide-medium" onclick="myFunction()">
@@ -224,8 +255,8 @@
       <a href="news.html" class="w3-bar-item w3-hover-red w3-button">Νέα</a>
 	  <a href="mailto:info@behealthier.gr" class="w3-bar-item w3-hover-red w3-button">Επικοινωνία</a>
     </div>
-    </div> 
-  
+    </div>
+
 </div>
 
 <!-- Header -->
@@ -244,9 +275,9 @@
 <!-- About Section -->
   <div class="w3-container w3-padding-32 " id="about" style="width:80%; margin: auto;">
     <h3 class="w3-border-bottom w3-border-black w3-padding-16">Πληροφορίες</h3>
-	
+
     <p style=" text-align: justify; text-justify: inter-word;">Το <b>beHEALTHIER</b> αποτελεί ένα εθνικό έργο που συγχρηματοδοτείται από την Ελλάδα και την Ευρωπαϊκή Ένωση. Ξεκίνησε τον Ιούνιο του 2020 και θα ολοκληρωθεί τον Δεκέμβριο του 2022.
-	Στόχος είναι η ανάπτυξη μιας καινοτόμου πλατφόρμας για τη Διαχείριση Ολιστικών Δεδομένων Υγείας με σκοπό την αποτελεσματική εκμετάλλευσή τους για τη χάραξη πολιτικών υγείας 
+	Στόχος είναι η ανάπτυξη μιας καινοτόμου πλατφόρμας για τη Διαχείριση Ολιστικών Δεδομένων Υγείας με σκοπό την αποτελεσματική εκμετάλλευσή τους για τη χάραξη πολιτικών υγείας
 	<span id="dots">...</span><span id="more"> <img class="w3-image" src="Images/beHEALTHIER_platform.png" alt="Health" width="550" height="250" style="float:right">
 	<br>
 	Το <b>beHEALTHIER</b> στοχεύει στην ανάπτυξη μιας καινοτόμου πλατφόρμας για τη Διαχείριση Εκτεταμένων Δεδομένων Υγείας με σκοπό την αποτελεσματική εκμετάλλευσή τους για τη χάραξη πολιτικών υγείας. Ειδικότερα, στο έργο προτείνεται μια διαδικασία συλλογής και διαχείρισης ιατρικών δεδομένων που αμέσως ή εμμέσως αφορούν την υγεία ενός ατόμου σε τρία (3) στάδια. Το πρώτο στάδιο είναι η συλλογή των δεδομένων και η δημιουργία των Εκτεταμένων Φακέλων Υγείας. Το δεύτερο είναι η εφαρμογή εργαλείων ανάλυσης στα δεδομένα αυτά, ενώ το τρίτο είναι η δημιουργία πολιτικών για τη Δημόσια Υγεία ή ενημέρωση των ήδη υπάρχουσων με βάση τα αποτελέσματα της ανάλυσης.
@@ -269,10 +300,10 @@
 	  <div class="container">
 		<img src="Images/offerings_1.jpg" alt="Snow" class="image" style="width:100%">
 		<div class="overlay">
-		<div class="text"><b>Εκτεταμένοι Φάκελοι Υγείας - ΕΦΥ</b><br><div style="font-size:1vw; font-style: italic;">Κατασκευή νέου είδους φακέλων υγείας που ενσωματώνει 
-		διαφορετικούς τύπους δεδομένων, όπως υγειονομικά 
-		και κοινωνικά δεδομένα, δεδομένα κοινωνικής μέριμνας, 
-		δεδομένα υπό μορφή βιοσημάτων από ιατρικές συσκευές και 
+		<div class="text"><b>Εκτεταμένοι Φάκελοι Υγείας - ΕΦΥ</b><br><div style="font-size:1vw; font-style: italic;">Κατασκευή νέου είδους φακέλων υγείας που ενσωματώνει
+		διαφορετικούς τύπους δεδομένων, όπως υγειονομικά
+		και κοινωνικά δεδομένα, δεδομένα κοινωνικής μέριμνας,
+		δεδομένα υπό μορφή βιοσημάτων από ιατρικές συσκευές και
 		δεδομένα υγειονομικής φροντίδας και περίθαλψης ενός ασθενούς.</div></div>
 	    </div>
 	  </div>
@@ -281,7 +312,7 @@
 	  <div class="container">
 		<img src="Images/offerings_2.jpg" alt="Snow" class="image" style="width:100%">
 		<div class="overlay">
-		<div class="text"><b>Δίκτυα ΕΦΥ</b><br><div style="font-size:1vw; font-style: italic;">Αξιοποίηση διαφορετικών τεχνικών εξόρυξης δεδομένων, 
+		<div class="text"><b>Δίκτυα ΕΦΥ</b><br><div style="font-size:1vw; font-style: italic;">Αξιοποίηση διαφορετικών τεχνικών εξόρυξης δεδομένων,
 		με έμφαση σε αλγορίθμους ομαδοποίησης και ταξινόμησης προκειμένου να εντοπιστούν συσχετίσεις μεταξύ των ΕΦΥ.</div></div>
 	    </div>
 	  </div>
@@ -292,8 +323,8 @@
 	  <div class="container">
 		<img src="Images/offerings_3.jpg" alt="Snow" class="image" style="width:100%">
 		<div class="overlay">
-		<div class="text"><b>Ανάλυση Δεδομένων</b><br><div style="font-size:1vw; font-style: italic;">Υλοποίηση προβλέψεων και 
-		παροχή πληροφοριών σχετικά με συγκεκριμένα ρίσκα για την υγεία τόσο σε επίπεδο πληθυσμού όσο και σε ατομικό επίπεδο, 
+		<div class="text"><b>Ανάλυση Δεδομένων</b><br><div style="font-size:1vw; font-style: italic;">Υλοποίηση προβλέψεων και
+		παροχή πληροφοριών σχετικά με συγκεκριμένα ρίσκα για την υγεία τόσο σε επίπεδο πληθυσμού όσο και σε ατομικό επίπεδο,
 		εφαρμόζοντας ποικίλες τεχνικές μηχανικής μάθησης.</div></div>
 	    </div>
 	  </div>
@@ -302,8 +333,8 @@
 	  <div class="container">
 		<img src="Images/offerings_4.jpg" alt="Snow" class="image" style="width:100%">
 		<div class="overlay">
-		<div class="text"><b>Διαμόρφωση Πολιτικών Υγείας</b><br><div style="font-size:1vw; font-style: italic;">Δημιουργία νέων πολιτικών 
-		για τη δημόσια υγεία βάσει των καταχωρήσεων των υπεύθυνων χάραξης πολιτικών, λαμβάνοντας υπόψη τα αποτελέσματα 
+		<div class="text"><b>Διαμόρφωση Πολιτικών Υγείας</b><br><div style="font-size:1vw; font-style: italic;">Δημιουργία νέων πολιτικών
+		για τη δημόσια υγεία βάσει των καταχωρήσεων των υπεύθυνων χάραξης πολιτικών, λαμβάνοντας υπόψη τα αποτελέσματα
 		που προκύπτουν από την Ανάλυση Δεδομένων.</div></div>
 	    </div>
 	  </div>
@@ -314,10 +345,10 @@
 	<div class="container">
 		<img src="Images/offerings_1.jpg" alt="Snow" class="image" style="width:100%;">
 		<div class="overlay">
-		<div class="text"><b style="font-size:2vw;">Εκτεταμένοι Φάκελοι Υγείας - ΕΦΥ</b><br><div style="font-size:2.3vw; font-style: italic;">Κατασκευή νέου είδους φακέλων υγείας που ενσωματώνει 
-		διαφορετικούς τύπους δεδομένων, όπως υγειονομικά 
-		και κοινωνικά δεδομένα, δεδομένα κοινωνικής μέριμνας, 
-		δεδομένα υπό μορφή βιοσημάτων από ιατρικές συσκευές και 
+		<div class="text"><b style="font-size:2vw;">Εκτεταμένοι Φάκελοι Υγείας - ΕΦΥ</b><br><div style="font-size:2.3vw; font-style: italic;">Κατασκευή νέου είδους φακέλων υγείας που ενσωματώνει
+		διαφορετικούς τύπους δεδομένων, όπως υγειονομικά
+		και κοινωνικά δεδομένα, δεδομένα κοινωνικής μέριμνας,
+		δεδομένα υπό μορφή βιοσημάτων από ιατρικές συσκευές και
 		δεδομένα υγειονομικής φροντίδας και περίθαλψης ενός ασθενούς.</div></div>
 	    </div>
 	  </div>
@@ -325,7 +356,7 @@
 	 <div class="container">
 		<img src="Images/offerings_2.jpg" alt="Snow" class="image" style="width:100%;">
 		<div class="overlay">
-		<div class="text"><b style="font-size:2vw;">Δίκτυα ΕΦΥ</b><br><div style="font-size:2.3vw; font-style: italic;">Αξιοποίηση διαφορετικών τεχνικών εξόρυξης δεδομένων, 
+		<div class="text"><b style="font-size:2vw;">Δίκτυα ΕΦΥ</b><br><div style="font-size:2.3vw; font-style: italic;">Αξιοποίηση διαφορετικών τεχνικών εξόρυξης δεδομένων,
 		με έμφαση σε αλγορίθμους ομαδοποίησης και ταξινόμησης προκειμένου να εντοπιστούν συσχετίσεις μεταξύ των ΕΦΥ.</div></div>
 	    </div>
 	  </div>
@@ -333,8 +364,8 @@
 	 <div class="container">
 		<img src="Images/offerings_3.jpg" alt="Snow" class="image" style="width:100%;">
 		<div class="overlay">
-		<div class="text"><b style="font-size:2vw;">Ανάλυση Δεδομένων</b><br><div style="font-size:2.3vw; font-style: italic;">Υλοποίηση προβλέψεων και 
-		παροχή πληροφοριών σχετικά με συγκεκριμένα ρίσκα για την υγεία τόσο σε επίπεδο πληθυσμού όσο και σε ατομικό επίπεδο, 
+		<div class="text"><b style="font-size:2vw;">Ανάλυση Δεδομένων</b><br><div style="font-size:2.3vw; font-style: italic;">Υλοποίηση προβλέψεων και
+		παροχή πληροφοριών σχετικά με συγκεκριμένα ρίσκα για την υγεία τόσο σε επίπεδο πληθυσμού όσο και σε ατομικό επίπεδο,
 		εφαρμόζοντας ποικίλες τεχνικές μηχανικής μάθησης.</div></div>
 	    </div>
 	  </div>
@@ -342,8 +373,8 @@
 	  <div class="container">
 		<img src="Images/offerings_4.jpg" alt="Snow" class="image" style="width:100%;">
 		<div class="overlay">
-		<div class="text"><b style="font-size:2vw;">Διαμόρφωση Πολιτικών Υγείας</b><br><div style="font-size:2.3vw; font-style: italic;">Δημιουργία νέων πολιτικών 
-		για τη δημόσια υγεία βάσει των καταχωρήσεων των υπεύθυνων χάραξης πολιτικών, λαμβάνοντας υπόψη τα αποτελέσματα 
+		<div class="text"><b style="font-size:2vw;">Διαμόρφωση Πολιτικών Υγείας</b><br><div style="font-size:2.3vw; font-style: italic;">Δημιουργία νέων πολιτικών
+		για τη δημόσια υγεία βάσει των καταχωρήσεων των υπεύθυνων χάραξης πολιτικών, λαμβάνοντας υπόψη τα αποτελέσματα
 		που προκύπτουν από την Ανάλυση Δεδομένων.</div></div>
 	    </div>
 	  </div>
@@ -394,8 +425,8 @@
       </div>
     </div>
   </div>
-  
-  
+
+
   <!-- Partners mobile -->
 <div class="w3-hide-medium w3-hide-large" style="width:80%; margin: auto;">
 <div class="row1">
@@ -432,11 +463,11 @@
 </div>
 <br>
 </div>
-  
 
-  
 
-  
+
+
+
 <div class="w3-light-grey">
   <!-- News Section -->
 <div class="w3-container w3-padding-32 " id="news" style="width:80%; margin: auto;">
@@ -450,7 +481,7 @@
 			  <p class="w3-opacity">10/07/2020</p>
 			  <p style=" text-align: justify; text-justify: inter-word;">Πραγματοποιήθηκε με επιτυχία το kick-off meeting του beHEALTHIER, με συμμετοχή όλων των φορέων. Συζητήθηκαν βασικά ζητήματα που αφορούν το έργο,
 					όπως το project coordination και το technical coordination. Δόθηκαν<span id="dots1">...</span><span id="more1"> κατευθύνσεις οι οποίες καθορίζουν την άριστη συνεργασία μεταξύ των φορέων.
-					Τέλος, ορίστηκαν με σαφήνεια οι στόχοι που καλείται να επιτύχει το έργο.</span> 					
+					Τέλος, ορίστηκαν με σαφήνεια οι στόχοι που καλείται να επιτύχει το έργο.</span>
 				</p>
 				<a onclick="showMore1()" id="myBtn1" class="w3-red w3-padding w3-hover-midnight" style="cursor: pointer;">Περισσότερα</a>
 			</div>
@@ -465,7 +496,7 @@
 					όπως το project coordination και το technical coordination. Δόθηκαν κατευθύνσεις οι οποίες καθορίζουν την άριστη συνεργασία μεταξύ των φορέων.
 					Τέλος, ορίστικαν με σαφήνεια οι στόχοι που καλείται να επιτύχει το έργο. Πραγματοποιήθηκε με επιτυχία το kick-off meeting του beHEALTHIER, με συμμετοχή όλων των φορέων. Συζητήθηκαν βασικά ζητήματα που αφορούν το έργο,
 					όπως το project coordination και το technical coordination. Δόθηκαν κατευθύνσεις οι οποίες καθορίζουν την άριστη συνεργασία μεταξύ των φορέων.
-					Τέλος, ορίστικαν με σαφήνεια οι στόχοι που καλείται να επιτύχει το έργο.</span> 	
+					Τέλος, ορίστικαν με σαφήνεια οι στόχοι που καλείται να επιτύχει το έργο.</span>
 				</p>
 				<a onclick="showMore2()" id="myBtn2" class="w3-red w3-padding w3-hover-midnight">Περισσότερα</a>
 			</div>
@@ -479,7 +510,7 @@
 					όπως το project coordination και το technical coordination. Δόθηκαν κατευθύνσεις οι οποίες καθορίζουν την άριστη συνεργασία μεταξύ των φορέων.
 					Τέλος, ορίστικαν με σαφήνεια οι στόχοι που καλείται να επιτύχει το έργο. Πραγματοποιήθηκε με επιτυχία το kick-off meeting του beHEALTHIER, με συμμετοχή όλων των φορέων. Συζητήθηκαν βασικά ζητήματα που αφορούν το έργο,
 					όπως το project coordination και το technical coordination. Δόθηκαν κατευθύνσεις οι οποίες καθορίζουν την άριστη συνεργασία μεταξύ των φορέων.
-					Τέλος, ορίστικαν με σαφήνεια οι στόχοι που καλείται να επιτύχει το έργο.</span>  	
+					Τέλος, ορίστικαν με σαφήνεια οι στόχοι που καλείται να επιτύχει το έργο.</span>
 				</p>
 				<a onclick="showMore3()" id="myBtn3" class="w3-red w3-padding w3-hover-midnight">Περισσότερα</a>
 			</div>
@@ -493,22 +524,8 @@
 </div>
 
 
-
-
-<!-- social media -->
-<div class="w3-section" style="position:fixed; right:0; bottom:5%; background-color:midnightblue; color:white; font-size:200%;">
-<div style="padding:3px;">
-    <a href="https://www.facebook.com/Behealthier-105005388343546"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-	<br>
-    <a href="https://www.linkedin.com/company/71740859/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-	<br>
-    <a href="https://twitter.com/beHEALTHIER1"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-	<br>
-	<a href="https://www.researchgate.net/project/beHEALTHIER"><span class="iconify w3-hover-opacity" data-icon="fa-brands:researchgate" data-inline="false"></span></a>
-</div>
-</div>
-
 <!-- Footer -->
+<!--
 <footer class="w3-center w3-midnight w3-padding-16 w3-hide-small">
   <p><img src="Images/eu2.png" alt="espa" style="width:50%"></p>
   <p style="font-size:50%"> </p>
@@ -517,13 +534,75 @@
   <p><img src="Images/eu2.png" alt="espa" style="width:100%"></p>
   <p style="font-size:50%"> </p>
 </footer>
+-->
+<footer style="background-color: midnightblue; color:white;">
 
 
+  <div class="w3-row-padding ">
+  <!-- All the news, starting from the newest to the oldest -->
+    <div class="w3-col 14 m4 w3-margin-bottom" style="padding-left:5%;">
 
+      <h3 class="w3-border-bottom w3-border-white">
+        <img src="Images/beHEALTHIER_logo_v2.png" width="30" height="25" style="border-radius: 50%;padding-right:5px;">
+        <span class="w3-text-red"><b>be</b><span class="w3-text-blue">HEALTHIER</span></span></h3>
+      <p style=" text-align: justify; text-justify: inter-word;">
+        Το έργο beHEALTHIER (κ.ε. Τ2ΕΔΚ-04207) χρηματοδοτείται στο πλαίσιο της πρόσκλησης
+        “Ερευνώ – Δημιουργώ – Καινοτομώ (Β’ κύκλος)” για την παρέμβαση ΙΙ «Συμπράξεις Επιχειρήσεων
+        με Ερευνητικούς Οργανισμούς από το Εθνικό Συμβούλιο Ποιότητας για την Ανάπτυξη,
+        το Υπουργείο Οικονομίας & Ανάπτυξης και την Ευρωπαϊκή Ένωση.
+      </p>
+      <p><img src="Images/eu2.png" alt="espa" style="width:100%"></p>
+    </div>
+
+    <div class="w3-col 14 m4 w3-margin-bottom" style="padding-right:2%;padding-left:2%;">
+
+      <h3 class="w3-border-bottom w3-border-white">Πληροφορίες</h3>
+      <p style=" text-align: justify; text-justify: inter-word;">Η ανάπτυξη και συντήρηση της ιστοσελίδας
+        γίνεται απο το την ερευνητική ομάδα Δεδομένων και Νεφοϋπολογιστικής (DAC).
+        <div class="w3-display-container">
+          <a href="https://dac.ds.unipi.gr"  target="_blank" style="text-decoration: none;"><div class="infobtn w3-padding" style="text-align:center;">DAC Website</div></a>
+        </div>
+        <br>
+        <div class="w3-display-container">
+          <a href="mailto:info@behealthier.gr" style="text-decoration: none;"><div class="infobtn w3-padding" style="text-align:center;">info@behealthier.gr</div></a>
+        </div>
+      </p>
+    </div>
+    <div class="w3-col 14 m4 w3-margin-bottom" style="padding-right:5%;">
+
+      <h3 class="w3-border-bottom w3-border-white">Newsletter</h3>
+      <div data-mooform-id="a17ca031-5749-4e2f-8bdc-c58d80017bbf" ></div>
+      <p style=" text-align: justify; text-justify: inter-word;">
+        <div class="w3-section" style="color:white; font-size:200%;">
+          <div style="padding:3px; text-align:center;">
+            <a href="https://www.facebook.com/Behealthier-105005388343546"><span id="fb" class="iconify" data-icon="fa-brands:facebook" data-inline="false"></span></a>
+
+            <a href="https://www.linkedin.com/company/71740859/"><span id="linkedin" class="iconify" data-icon="fa-brands:linkedin" data-inline="false"></span></a>
+
+            <a href="https://twitter.com/beHEALTHIER1"><span id="twitter" class="iconify" data-icon="fa-brands:twitter" data-inline="false"></span></i></a>
+
+          	<a href="https://www.researchgate.net/project/beHEALTHIER"><span id="researchgate" class="iconify" data-icon="fa-brands:researchgate" data-inline="false"></span></a>
+          </div>
+        </div>
+
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+
+    <div class="w3-display-container">
+      <div class="w3-padding" style="text-align:center;">© 2021 • beHEALTHIER • Data and Cloud Research Group</div>
+    </div>
+  </div>
+  <!-- Copyright -->
+</footer>
 
 
 <script>
-/* When the user clicks on the button, 
+/* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
