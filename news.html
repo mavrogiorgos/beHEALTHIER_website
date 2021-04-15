@@ -8,6 +8,16 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 <head>
+
+  <script>
+    //load TrackerJS
+    !function(t,n,e,o,a){function d(t){var n=~~(Date.now()/3e5),o=document.createElement(e);o.async=!0,o.src=t+"?ts="+n;var a=document.getElementsByTagName(e)[0];a.parentNode.insertBefore(o,a)}t.MooTrackerObject=a,t[a]=t[a]||function(){return t[a].q?void t[a].q.push(arguments):void(t[a].q=[arguments])},window.attachEvent?window.attachEvent("onload",d.bind(this,o)):window.addEventListener("load",d.bind(this,o),!1)}(window,document,"script","//cdn.stat-track.com/statics/moosend-tracking.min.js","mootrack");
+    //tracker has to be initialized otherwise it will generate warnings and wont sendtracking events
+    mootrack('init', '4bfa78ad5dcd474090ddcc76bd3728ef');
+    // track a view of the current page
+    mootrack('trackPageView');
+  </script>
+
   <link rel="icon" href="Images/beHEALTHIER_logo_v2.png" type="image/gif">
   <!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-9DWB7Y8236"></script>
@@ -18,7 +28,7 @@
 
 	  gtag('config', 'G-9DWB7Y8236');
 	</script>
-  
+
   <style>
 	.navbar {
 	  overflow: hidden;
@@ -42,7 +52,7 @@
 
 	.dropdown .dropbtn {
 	  cursor: pointer;
-	  font-size: 16px;  
+	  font-size: 16px;
 	  border: none;
 	  outline: none;
 	  color: white;
@@ -81,17 +91,17 @@
 	.show {
 	  display: block;
 	}
-	
-	
-	
+
+
+
 	#menu {
 	  width: 30px;
 	  height: 3px;
 	  background-color: white;
 	  margin: 3px 0px;
 	}
-	
-	
+
+
 	#more {display: none;}
 	#more1 {display: none;}
 	#more2 {display: none;}
@@ -99,14 +109,40 @@
 	#more4 {display: none;}
 	#more5 {display: none;}
 
+  /* footer styling */
+  #fb:hover {
+    color: #4267B2;
+  }
 
-	@media screen and (min-width: 601px) 
+  #linkedin:hover {
+    color: #2867B2;
+  }
+
+  #twitter:hover {
+    color: #1DA1F2;
+  }
+
+  #researchgate:hover {
+    color: #04cbbb;
+  }
+
+  .infobtn {
+    background-color: rgba(173,216,230,0.2);
+    border-radius: 25px;
+  }
+
+  .infobtn:hover {
+    background-color: rgba(173,216,230,0.5);
+  }
+
+
+	@media screen and (min-width: 601px)
 	{
 		#news_text{
 		padding-left:50px;
 		}
 	}
-	@media screen and (max-width: 600px) 
+	@media screen and (max-width: 600px)
 	{
 		#news_text{
 		padding-left:0px;
@@ -118,7 +154,7 @@
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top w3-midnight w3-padding w3-card">
-  
+
     <a href="https://behealthier.gr" class="w3-bar-item w3-left"><img src="Images/beHEALTHIER_logo_v1.png" width="40" height="40" style="border-radius: 50%;"></a>
 	<div class="dropdown w3-right">
 	  <button class="dropbtn w3-hide-large w3-hide-medium" onclick="myFunction()">
@@ -143,8 +179,8 @@
       <a href="news.html" class="w3-bar-item w3-hover-red w3-button">Νέα</a>
 	  <a href="mailto:info@behealthier.gr" class="w3-bar-item w3-hover-red w3-button">Επικοινωνία</a>
     </div>
-    </div> 
-  
+    </div>
+
 </div>
 
 <!-- Header -->
@@ -168,7 +204,7 @@
 			  <img src="Images/kickoff.png" class="w3-mobile" style="width:15%; float:left;">
 			  <div id="news_text" style=" text-align: justify; text-justify: inter-word; overflow: hidden;" class="w3-mobile">Πραγματοποιήθηκε με επιτυχία το kick-off meeting του beHEALTHIER, με συμμετοχή όλων των φορέων. Συζητήθηκαν βασικά ζητήματα που αφορούν το έργο,
 					όπως το project coordination και το technical coordination. Δόθηκαν<span id="dots">...</span><span id="more"> κατευθύνσεις οι οποίες καθορίζουν την άριστη συνεργασία μεταξύ των φορέων.
-					Τέλος, ορίστηκαν με σαφήνεια οι στόχοι που καλείται να επιτύχει το έργο.</span> 	
+					Τέλος, ορίστηκαν με σαφήνεια οι στόχοι που καλείται να επιτύχει το έργο.</span>
 				</div>
 				<br>
 				<a onclick="showMore(); hide();" id="myBtn" class="w3-red w3-padding w3-hover-midnight w3-right" style="cursor: pointer;">Περισσότερα</a>
@@ -184,7 +220,7 @@
 					όπως το project coordination και το technical coordination. Δόθηκαν κατευθύνσεις οι οποίες καθορίζουν την άριστη συνεργασία μεταξύ των φορέων.
 					Τέλος, ορίστικαν με σαφήνεια οι στόχοι που καλείται να επιτύχει το έργο.Πραγματοποιήθηκε με επιτυχία το kick-off meeting του beHEALTHIER, με συμμετοχή όλων των φορέων. Συζητήθηκαν βασικά ζητήματα που αφορούν το έργο,
 					όπως το project coordination και το technical coordination. Δόθηκαν κατευθύνσεις οι οποίες καθορίζουν την άριστη συνεργασία μεταξύ των φορέων.
-					Τέλος, ορίστικαν με σαφήνεια οι στόχοι που καλείται να επιτύχει το έργο.</span> 	
+					Τέλος, ορίστικαν με σαφήνεια οι στόχοι που καλείται να επιτύχει το έργο.</span>
 				</div>
 				<br>
 				<a onclick="showMore1(); hide1();" id="myBtn1" class="w3-red w3-padding w3-hover-midnight w3-right" style="cursor: pointer;">Περισσότερα</a>
@@ -199,7 +235,7 @@
 					όπως το project coordination και το technical coordination. Δόθηκαν κατευθύνσεις οι οποίες καθορίζουν την άριστη συνεργασία μεταξύ των φορέων.
 					Τέλος, ορίστικαν με σαφήνεια οι στόχοι που καλείται να επιτύχει το έργο.Πραγματοποιήθηκε με επιτυχία το kick-off meeting του beHEALTHIER, με συμμετοχή όλων των φορέων. Συζητήθηκαν βασικά ζητήματα που αφορούν το έργο,
 					όπως το project coordination και το technical coordination. Δόθηκαν κατευθύνσεις οι οποίες καθορίζουν την άριστη συνεργασία μεταξύ των φορέων.
-					Τέλος, ορίστικαν με σαφήνεια οι στόχοι που καλείται να επιτύχει το έργο.</span> 	
+					Τέλος, ορίστικαν με σαφήνεια οι στόχοι που καλείται να επιτύχει το έργο.</span>
 				</div>
 				<br>
 				<a onclick="showMore2(); hide2();" id="myBtn2" class="w3-red w3-padding w3-hover-midnight w3-right" style="cursor: pointer;">Περισσότερα</a>
@@ -208,7 +244,7 @@
 		</div>
 		<!--
 		<div class="w3-row-padding ">
-		
+
 			<div class="w3-col 13 quarter w3-margin-bottom news1 news2 news3 news5 news6" id="news4">
 			  <h3>Αρχική συνάντηση</h3>
 			  <p class="w3-opacity">10/07/2020</p>
@@ -219,7 +255,7 @@
 					όπως το project coordination και το technical coordination. Δόθηκαν κατευθύνσεις οι οποίες καθορίζουν την άριστη συνεργασία μεταξύ των φορέων.
 					Τέλος, ορίστικαν με σαφήνεια οι στόχοι που καλείται να επιτύχει το έργο.Πραγματοποιήθηκε με επιτυχία το kick-off meeting του beHEALTHIER, με συμμετοχή όλων των φορέων. Συζητήθηκαν βασικά ζητήματα που αφορούν το έργο,
 					όπως το project coordination και το technical coordination. Δόθηκαν κατευθύνσεις οι οποίες καθορίζουν την άριστη συνεργασία μεταξύ των φορέων.
-					Τέλος, ορίστικαν με σαφήνεια οι στόχοι που καλείται να επιτύχει το έργο.</span> 	
+					Τέλος, ορίστικαν με σαφήνεια οι στόχοι που καλείται να επιτύχει το έργο.</span>
 				</div>
 				<br>
 				<a onclick="showMore3(); hide3();" id="myBtn3" class="w3-red w3-padding w3-hover-midnight w3-right" style="cursor: pointer;">Περισσότερα</a>
@@ -234,7 +270,7 @@
 					όπως το project coordination και το technical coordination. Δόθηκαν κατευθύνσεις οι οποίες καθορίζουν την άριστη συνεργασία μεταξύ των φορέων.
 					Τέλος, ορίστικαν με σαφήνεια οι στόχοι που καλείται να επιτύχει το έργο.Πραγματοποιήθηκε με επιτυχία το kick-off meeting του beHEALTHIER, με συμμετοχή όλων των φορέων. Συζητήθηκαν βασικά ζητήματα που αφορούν το έργο,
 					όπως το project coordination και το technical coordination. Δόθηκαν κατευθύνσεις οι οποίες καθορίζουν την άριστη συνεργασία μεταξύ των φορέων.
-					Τέλος, ορίστικαν με σαφήνεια οι στόχοι που καλείται να επιτύχει το έργο.</span> 	
+					Τέλος, ορίστικαν με σαφήνεια οι στόχοι που καλείται να επιτύχει το έργο.</span>
 				</div>
 				<br>
 				<a onclick="showMore4(); hide4();" id="myBtn4" class="w3-red w3-padding w3-hover-midnight w3-right" style="cursor: pointer;">Περισσότερα</a>
@@ -249,50 +285,93 @@
 					όπως το project coordination και το technical coordination. Δόθηκαν κατευθύνσεις οι οποίες καθορίζουν την άριστη συνεργασία μεταξύ των φορέων.
 					Τέλος, ορίστικαν με σαφήνεια οι στόχοι που καλείται να επιτύχει το έργο.Πραγματοποιήθηκε με επιτυχία το kick-off meeting του beHEALTHIER, με συμμετοχή όλων των φορέων. Συζητήθηκαν βασικά ζητήματα που αφορούν το έργο,
 					όπως το project coordination και το technical coordination. Δόθηκαν κατευθύνσεις οι οποίες καθορίζουν την άριστη συνεργασία μεταξύ των φορέων.
-					Τέλος, ορίστικαν με σαφήνεια οι στόχοι που καλείται να επιτύχει το έργο.</span> 	
+					Τέλος, ορίστικαν με σαφήνεια οι στόχοι που καλείται να επιτύχει το έργο.</span>
 				</div>
 				<br>
 				<a onclick="showMore5(); hide5();" id="myBtn5" class="w3-red w3-padding w3-hover-midnight w3-right" style="cursor: pointer;">Περισσότερα</a>
 			</div>
-			
+
 		</div>
 		-->
 		<br>
 	</div>
   </div>
-  
- 
+
+
 
 <!-- End page content -->
 </div>
 
 
-<!-- social media -->
-<div class="w3-section" style="position:fixed; right:0; bottom:5%; background-color:midnightblue; color:white; font-size:200%;">
-<div style="padding:3px;">
-    <a href="https://www.facebook.com/Behealthier-105005388343546"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-	<br>
-    <a href="https://www.linkedin.com/company/71740859/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-	<br>
-    <a href="https://twitter.com/beHEALTHIER1"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-	<br>
-	<a href="https://www.researchgate.net/project/beHEALTHIER"><span class="iconify w3-hover-opacity" data-icon="fa-brands:researchgate" data-inline="false"></span></a>
-</div>
-</div>
-
-
 <!-- Footer -->
-<footer class="w3-center w3-midnight w3-padding-16 w3-hide-small">
-  <p><img src="Images/eu2.png" alt="espa" style="width:50%"></p>
-  <p style="font-size:50%"> </p>
-</footer>
-<footer class="w3-center w3-midnight w3-padding-16 w3-hide-large w3-hide-medium">
-  <p><img src="Images/eu2.png" alt="espa" style="width:100%"></p>
-  <p style="font-size:50%"> </p>
+<footer style="background-color: midnightblue; color:white;">
+
+
+  <div class="w3-row-padding ">
+  <!-- All the news, starting from the newest to the oldest -->
+    <div class="w3-col 14 m4 w3-margin-bottom" style="padding-left:5%;">
+
+      <h3 class="w3-border-bottom w3-border-white">
+        <img src="Images/beHEALTHIER_logo_v2.png" width="30" height="25" style="border-radius: 50%;padding-right:5px;">
+        <span class="w3-text-red"><b>be</b><span class="w3-text-blue">HEALTHIER</span></span></h3>
+      <p style=" text-align: justify; text-justify: inter-word;">
+        Το έργο beHEALTHIER (κ.ε. Τ2ΕΔΚ-04207) χρηματοδοτείται στο πλαίσιο της πρόσκλησης
+        “Ερευνώ – Δημιουργώ – Καινοτομώ (Β’ κύκλος)” για την παρέμβαση ΙΙ «Συμπράξεις Επιχειρήσεων
+        με Ερευνητικούς Οργανισμούς από το Εθνικό Συμβούλιο Ποιότητας για την Ανάπτυξη,
+        το Υπουργείο Οικονομίας & Ανάπτυξης και την Ευρωπαϊκή Ένωση.
+      </p>
+      <p><img src="Images/eu2.png" alt="espa" style="width:100%"></p>
+    </div>
+
+    <div class="w3-col 14 m4 w3-margin-bottom" style="padding-right:2%;padding-left:2%;">
+
+      <h3 class="w3-border-bottom w3-border-white">Πληροφορίες</h3>
+      <p style=" text-align: justify; text-justify: inter-word;">Η ανάπτυξη και συντήρηση της ιστοσελίδας
+        γίνεται από την ερευνητική ομάδα Δεδομένων και Νεφοϋπολογιστικής (DAC).
+        <div class="w3-display-container">
+          <a href="https://dac.ds.unipi.gr"  target="_blank" style="text-decoration: none;"><div class="infobtn w3-padding" style="text-align:center;">DAC Website</div></a>
+        </div>
+        <br>
+        <div class="w3-display-container">
+          <a href="mailto:info@behealthier.gr" style="text-decoration: none;"><div class="infobtn w3-padding" style="text-align:center;">info@behealthier.gr</div></a>
+        </div>
+      </p>
+    </div>
+    <div class="w3-col 14 m4 w3-margin-bottom" style="padding-right:5%;">
+
+      <h3 class="w3-border-bottom w3-border-white">Newsletter</h3>
+      <div data-mooform-id="557f4186-9455-4e0f-9bab-45bfe06d1243" ></div>
+      <p style=" text-align: justify; text-justify: inter-word;">
+        <div class="w3-section" style="color:white; font-size:150%;">
+          <div style="padding:3px; text-align:center;">
+            <div style="font-size:50%;">Ακολουθήστε μας:</div>
+            <a href="https://www.facebook.com/Behealthier-105005388343546"><span id="fb" class="iconify" data-icon="fa-brands:facebook" data-inline="false"></span></a>
+
+            <a href="https://www.linkedin.com/company/71740859/"><span id="linkedin" class="iconify" data-icon="fa-brands:linkedin" data-inline="false"></span></a>
+
+            <a href="https://twitter.com/beHEALTHIER1"><span id="twitter" class="iconify" data-icon="fa-brands:twitter" data-inline="false"></span></i></a>
+
+            <a href="https://www.researchgate.net/project/beHEALTHIER"><span id="researchgate" class="iconify" data-icon="fa-brands:researchgate" data-inline="false"></span></a>
+          </div>
+        </div>
+
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+
+    <div class="w3-display-container">
+      <div class="w3-padding" style="text-align:center;">© 2021 • beHEALTHIER • Data and Cloud Research Group</div>
+    </div>
+  </div>
+  <!-- Copyright -->
 </footer>
 
 <script>
-/* When the user clicks on the button, 
+/* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
