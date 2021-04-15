@@ -8,6 +8,16 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 <head>
+
+  <script>
+    //load TrackerJS
+    !function(t,n,e,o,a){function d(t){var n=~~(Date.now()/3e5),o=document.createElement(e);o.async=!0,o.src=t+"?ts="+n;var a=document.getElementsByTagName(e)[0];a.parentNode.insertBefore(o,a)}t.MooTrackerObject=a,t[a]=t[a]||function(){return t[a].q?void t[a].q.push(arguments):void(t[a].q=[arguments])},window.attachEvent?window.attachEvent("onload",d.bind(this,o)):window.addEventListener("load",d.bind(this,o),!1)}(window,document,"script","//cdn.stat-track.com/statics/moosend-tracking.min.js","mootrack");
+    //tracker has to be initialized otherwise it will generate warnings and wont sendtracking events
+    mootrack('init', '4bfa78ad5dcd474090ddcc76bd3728ef');
+    // track a view of the current page
+    mootrack('trackPageView');
+  </script>
+
   <link rel="icon" href="Images/beHEALTHIER_logo_v2.png" type="image/gif">
   <!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-9DWB7Y8236"></script>
@@ -18,7 +28,7 @@
 
 	  gtag('config', 'G-9DWB7Y8236');
 	</script>
-  
+
   <style>
 	.navbar {
 	  overflow: hidden;
@@ -42,7 +52,7 @@
 
 	.dropdown .dropbtn {
 	  cursor: pointer;
-	  font-size: 16px;  
+	  font-size: 16px;
 	  border: none;
 	  outline: none;
 	  color: white;
@@ -81,18 +91,45 @@
 	.show {
 	  display: block;
 	}
-	
-	
-	
+
+
+
 	#menu {
 	  width: 30px;
 	  height: 3px;
 	  background-color: white;
 	  margin: 3px 0px;
 	}
-	
-	
+
+
 	#more {display: none;}
+
+  /* footer styling */
+  #fb:hover {
+    color: #4267B2;
+  }
+
+  #linkedin:hover {
+    color: #2867B2;
+  }
+
+  #twitter:hover {
+    color: #1DA1F2;
+  }
+
+  #researchgate:hover {
+    color: #04cbbb;
+  }
+
+  .infobtn {
+    background-color: rgba(173,216,230,0.2);
+    border-radius: 25px;
+  }
+
+  .infobtn:hover {
+    background-color: rgba(173,216,230,0.5);
+  }
+
 
 	</style>
 </head>
@@ -100,7 +137,7 @@
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top w3-midnight w3-padding w3-card">
-  
+
     <a href="https://behealthier.gr" class="w3-bar-item w3-left"><img src="Images/beHEALTHIER_logo_v1.png" width="40" height="40" style="border-radius: 50%;"></a>
 	<div class="dropdown w3-right">
 	  <button class="dropbtn w3-hide-large w3-hide-medium" onclick="myFunction()">
@@ -125,8 +162,8 @@
       <a href="news.html" class="w3-bar-item w3-hover-red w3-button">Νέα</a>
 	  <a href="mailto:info@behealthier.gr" class="w3-bar-item w3-hover-red w3-button">Επικοινωνία</a>
     </div>
-    </div> 
-  
+    </div>
+
 </div>
 
 <!-- Header -->
@@ -139,81 +176,132 @@
 
 
   <!-- About Section -->
-  <div class="w3-container w3-padding-32" id="about" style="position: relative; min-height: 100vh;">
-    <p style=" text-align: justify; text-justify: inter-word; width:80%; margin: auto;">
-		Το <b>Εργαστήριο Υγιεινής & Επιδημιολογίας </b> αποτελεί δραστήριο και παραγωγικό ερευνητικό εργαστήριο του  Τμήματος Δημόσιας και Κοινοτικής Υγείας του <b> Πανεπιστημίου Δυτικής Αττικής </b>. Έχει ως στόχο την υψηλών προδιαγραφών σύγχρονη προπτυχιακή και μεταπτυχιακή εκπαίδευση φοιτητών, 
-		καθώς και την προαγωγή της βασικής και εφαρμοσμένης έρευνας σε πολλά και καινοτόμα πεδία της δημόσιας και κοινοτικής υγείας. 
-		Το Εργαστήριο Υγιεινής & Επιδημιολογίας  συνεργάζεται με έγκριτα ερευνητικά κέντρα του εσωτερικού και του εξωτερικού και 
-		έχει την επιστημονική ευθύνη υλοποίησης για πλήθος ερευνητικών έργων και προγραμμάτων σχετικά με την προαγωγή υγείας και την 
-		αξιολόγηση της υγείας που βρίσκονται σε εξέλιξη. Η επιστημονική ομάδα του εργαστηρίου συμμετέχει σε Ευρωπαϊκές και σε Εθνικές δράσεις, 
-		είτε αυτόνομα είτε σε συνεργασία με Πανεπιστήμια και επιστημονικούς φορείς της χώρας και του εξωτερικού στα γνωστικά αντικείμενα:
-		<ul style="list-style-type:square; text-align: justify;">
-		  <li style="width:80%; margin: auto;">Επιδημιολογίας και πρόληψης χρονιών και λοιμωδών νοσημάτων</li>
-		  <li style="width:80%; margin: auto;">Προστασίας, Πρόληψης και Προαγωγής υγείας</li>
-		  <li style="width:80%; margin: auto;">Σχεδιασμού, εφαρμογής και αξιολόγησης ολοκληρωμένων προγραμμάτων πρόληψης και προαγωγής υγείας</li>
-		  <li style="width:80%; margin: auto;">Σχεδιασμού, εφαρμογής και αξιολόγησης υπηρεσιών φροντίδας υγείας</li>
-		  <li style="width:80%; margin: auto;">Ανάπτυξης Νέων ερευνητικών και εκπαιδευτικών μεθοδολογιών και εφαρμογών στον τομέα της δημόσιας και κοινοτικής υγείας.</li>
-		</ul>
-		<br>
-		<div style="width:80%; margin: auto;">Ενδεικτικά αναφέρονται :</div>
-		<ul style="list-style-type:square; text-align: justify;">
-		<li style="width:80%; margin: auto;">οι έρευνες σχετικά με την αξιολόγηση της αναπηρίας και της υγείας του πληθυσμού με την κλίμακα WHODAS 2.0 του Παγκόσμιου Οργανισμού Υγείας, </li>
-		<li style="width:80%; margin: auto;">το ευρωπαϊκό πρόγραμμα STRENCO (Strengthening multi-professional competencies in mental health in an international context, through co-production with academics, students, service users and professionals),  με στόχο την  ενίσχυση των ικανοτήτων/δεξιοτήτων της διακλαδικής 
-		ομάδας στην ψυχική υγεία μέσω της συνεργατικής/συμμετοχικής προσέγγισης για την συμπαραγωγή υπηρεσιών προαγωγής ψυχικής υγείας.</li>
-		<li style="width:80%; margin: auto;">το ευρωπαϊκό πρόγραμμα EDUVAC (Educating Vaccination Competence), με στόχο του έργου την ανάπτυξη γνώσεων και δεξιοτήτων για τους εμβολιασμούς σε διάφορες πληθυσμιακές ομάδες.</li>
-		<li style="width:80%; margin: auto;">το ευρωπαϊκό πρόγραμμα EDDIS – A Digital Program for Sexual Education in Secondary Schools με στόχο την  εκτίμηση των αναγκών των έφηβων στο πλαίσιο της σεξουαλικής υγείας και σεξουαλικής αγωγής. </li>
-		</ul>
-		<br>
-		<div style="width:80%; margin: auto;">Το Εργαστήριο συμμετέχει επίσης ως Συνεργαζόμενος Φορέας :</div>
-		<ul style="list-style-type:square; text-align: justify;">
-		<li style="width:80%; margin: auto;">στην Ευρωπαϊκή Δράση  “EU HEALTHY GATEWAYS” (Grant Agreement Number: 801493) που αφορά στην ετοιμότητα για την αντιμετώπιση διασυνοριακών κινδύνων δημόσιας υγείας στις πύλες εισόδου συμπεριλαμβανομένων λιμένων, αεροδρομίων και χερσαίων διαβάσεων και χρηματοδοτείται από το Τρίτο Πρόγραμμα για την Υγεία (2014-2020) της Ευρωπαϊκής Ένωσης. </li>
-		<li style="width:80%; margin: auto;">στην Υλοποίηση πανελλαδικής μελέτης σε συνεργασία με το Υπουργείο Υγείας για την αξιολόγηση της οργάνωσης και της υλοποίησης στις σχολικές μονάδες, δράσεων και παρεμβάσεων ενημέρωσης και ευαισθητοποίησης μαθητικού πληθυσμού στο πλαίσιο της αγωγής υγείας που αναπτύσσονται από το Υπουργείο Υγείας.</li>
-		</ul>
-		<br>
-		<div style="text-align: justify; width:80%; margin: auto;">Η συμβολή της επιστημονικής ομάδας του Εργαστηρίου Υγιεινής & Επιδημιολογίας, του Τμήματος Δημόσιας και Κοινοτικής Υγείας, του Πανεπιστημίου Δυτικής Αττικής στο έργο BeHEALTHIER, έγκειται στην συμμετοχή τους κατά κύριο λόγο, στα εξής παραδοτέα:
-		2.3.1  Προδιαγραφές Δικτύων Ολιστικών Φακέλων Υγείας
-		4.1.1 Μεθοδολογία Ανάλυσης Δεδομένων για τη Διαμόρφωση Πολιτικών Δημόσιας Υγείας 
-		4.4.1 Δημοσίευση Ερευνητικών Αποτελεσμάτων Ε.Ε.4., και 
-		5.3.1 Αποτελέσματα Πειραματικής Λειτουργίας για τη Διαμόρφωση Πολιτικών Δημόσιας Υγείας
-		Συνοπτικά, το Εργαστήριο Υγιεινής & Επιδημιολογίας θα συμμετέχει στη διαμόρφωση των ολιστικών φακέλων υγείας (Ε.Ε.2), και θα αναλάβει την Ε.Ε.4 αναφορικά με την αξιοποίηση της αξίας των δεδομένων και τη δημιουργία πολιτικών υγείας.
-		</div>
-	</p>
-	<div style="width:80%; margin: auto;">
-	<a href='partners.html' class="w3-red w3-padding w3-hover-midnight w3-right" style="cursor: pointer; text-decoration:none">Επιστροφή στους Συμμετέχοντες</a>
-	</div>
+    <div class="w3-container w3-padding-32 " id="news" style="width:80%; margin: auto;">
+  <div class="w3-row-padding ">
+  <!-- All the news, starting from the newest to the oldest -->
+    <div class="w3-col 14 m4 w3-margin-bottom">
+      <a href = "https://www.uniwa.gr"><img src="Images/pada.png"  style="width:100%; background-color: lightblue;padding:10px;"></a>
+    </div>
+
+    <div class="w3-col 14 m8 w3-margin-bottom">
+      <p style=" text-align: justify; text-justify: inter-word; width:80%; margin: auto;">
+  		Το <b>Εργαστήριο Υγιεινής & Επιδημιολογίας </b> αποτελεί δραστήριο και παραγωγικό ερευνητικό εργαστήριο του  Τμήματος Δημόσιας και Κοινοτικής Υγείας του <b> Πανεπιστημίου Δυτικής Αττικής </b>. Έχει ως στόχο την υψηλών προδιαγραφών σύγχρονη προπτυχιακή και μεταπτυχιακή εκπαίδευση φοιτητών,
+  		καθώς και την προαγωγή της βασικής και εφαρμοσμένης έρευνας σε πολλά και καινοτόμα πεδία της δημόσιας και κοινοτικής υγείας.
+  		Το Εργαστήριο Υγιεινής & Επιδημιολογίας  συνεργάζεται με έγκριτα ερευνητικά κέντρα του εσωτερικού και του εξωτερικού και
+  		έχει την επιστημονική ευθύνη υλοποίησης για πλήθος ερευνητικών έργων και προγραμμάτων σχετικά με την προαγωγή υγείας και την
+  		αξιολόγηση της υγείας που βρίσκονται σε εξέλιξη. Η επιστημονική ομάδα του εργαστηρίου συμμετέχει σε Ευρωπαϊκές και σε Εθνικές δράσεις,
+  		είτε αυτόνομα είτε σε συνεργασία με Πανεπιστήμια και επιστημονικούς φορείς της χώρας και του εξωτερικού στα γνωστικά αντικείμενα:
+  		<ul style="list-style-type:square; text-align: justify;">
+  		  <li style="width:80%; margin: auto;">Επιδημιολογίας και πρόληψης χρονιών και λοιμωδών νοσημάτων</li>
+  		  <li style="width:80%; margin: auto;">Προστασίας, Πρόληψης και Προαγωγής υγείας</li>
+  		  <li style="width:80%; margin: auto;">Σχεδιασμού, εφαρμογής και αξιολόγησης ολοκληρωμένων προγραμμάτων πρόληψης και προαγωγής υγείας</li>
+  		  <li style="width:80%; margin: auto;">Σχεδιασμού, εφαρμογής και αξιολόγησης υπηρεσιών φροντίδας υγείας</li>
+  		  <li style="width:80%; margin: auto;">Ανάπτυξης Νέων ερευνητικών και εκπαιδευτικών μεθοδολογιών και εφαρμογών στον τομέα της δημόσιας και κοινοτικής υγείας.</li>
+  		</ul>
+  		<br>
+  		<div style="width:80%; margin: auto;">Ενδεικτικά αναφέρονται :</div>
+  		<ul style="list-style-type:square; text-align: justify;">
+  		<li style="width:80%; margin: auto;">οι έρευνες σχετικά με την αξιολόγηση της αναπηρίας και της υγείας του πληθυσμού με την κλίμακα WHODAS 2.0 του Παγκόσμιου Οργανισμού Υγείας, </li>
+  		<li style="width:80%; margin: auto;">το ευρωπαϊκό πρόγραμμα STRENCO (Strengthening multi-professional competencies in mental health in an international context, through co-production with academics, students, service users and professionals),  με στόχο την  ενίσχυση των ικανοτήτων/δεξιοτήτων της διακλαδικής
+  		ομάδας στην ψυχική υγεία μέσω της συνεργατικής/συμμετοχικής προσέγγισης για την συμπαραγωγή υπηρεσιών προαγωγής ψυχικής υγείας.</li>
+  		<li style="width:80%; margin: auto;">το ευρωπαϊκό πρόγραμμα EDUVAC (Educating Vaccination Competence), με στόχο του έργου την ανάπτυξη γνώσεων και δεξιοτήτων για τους εμβολιασμούς σε διάφορες πληθυσμιακές ομάδες.</li>
+  		<li style="width:80%; margin: auto;">το ευρωπαϊκό πρόγραμμα EDDIS – A Digital Program for Sexual Education in Secondary Schools με στόχο την  εκτίμηση των αναγκών των έφηβων στο πλαίσιο της σεξουαλικής υγείας και σεξουαλικής αγωγής. </li>
+  		</ul>
+  		<br>
+  		<div style="width:80%; margin: auto;">Το Εργαστήριο συμμετέχει επίσης ως Συνεργαζόμενος Φορέας :</div>
+  		<ul style="list-style-type:square; text-align: justify;">
+  		<li style="width:80%; margin: auto;">στην Ευρωπαϊκή Δράση  “EU HEALTHY GATEWAYS” (Grant Agreement Number: 801493) που αφορά στην ετοιμότητα για την αντιμετώπιση διασυνοριακών κινδύνων δημόσιας υγείας στις πύλες εισόδου συμπεριλαμβανομένων λιμένων, αεροδρομίων και χερσαίων διαβάσεων και χρηματοδοτείται από το Τρίτο Πρόγραμμα για την Υγεία (2014-2020) της Ευρωπαϊκής Ένωσης. </li>
+  		<li style="width:80%; margin: auto;">στην Υλοποίηση πανελλαδικής μελέτης σε συνεργασία με το Υπουργείο Υγείας για την αξιολόγηση της οργάνωσης και της υλοποίησης στις σχολικές μονάδες, δράσεων και παρεμβάσεων ενημέρωσης και ευαισθητοποίησης μαθητικού πληθυσμού στο πλαίσιο της αγωγής υγείας που αναπτύσσονται από το Υπουργείο Υγείας.</li>
+  		</ul>
+  		<br>
+  		<div style="text-align: justify; width:80%; margin: auto;">Η συμβολή της επιστημονικής ομάδας του Εργαστηρίου Υγιεινής & Επιδημιολογίας, του Τμήματος Δημόσιας και Κοινοτικής Υγείας, του Πανεπιστημίου Δυτικής Αττικής στο έργο beHEALTHIER, έγκειται στην συμμετοχή τους κατά κύριο λόγο, στα εξής παραδοτέα:
+  		2.3.1  Προδιαγραφές Δικτύων Ολιστικών Φακέλων Υγείας
+  		4.1.1 Μεθοδολογία Ανάλυσης Δεδομένων για τη Διαμόρφωση Πολιτικών Δημόσιας Υγείας
+  		4.4.1 Δημοσίευση Ερευνητικών Αποτελεσμάτων Ε.Ε.4., και
+  		5.3.1 Αποτελέσματα Πειραματικής Λειτουργίας για τη Διαμόρφωση Πολιτικών Δημόσιας Υγείας
+  		Συνοπτικά, το Εργαστήριο Υγιεινής & Επιδημιολογίας θα συμμετέχει στη διαμόρφωση των ολιστικών φακέλων υγείας (Ε.Ε.2), και θα αναλάβει την Ε.Ε.4 αναφορικά με την αξιοποίηση της αξίας των δεδομένων και τη δημιουργία πολιτικών υγείας.
+  		</div>
+  	</p>
+    <div style="width:80%; margin: auto;">
+    <a href='partners.html' class="w3-red w3-padding w3-hover-midnight w3-right" style="cursor: pointer; text-decoration:none">Επιστροφή στους Συμμετέχοντες</a>
+    </div>
+    </div>
   </div>
-
-  
-
-
-
-<!-- social media -->
-<div class="w3-section" style="position:fixed; right:0; bottom:5%; background-color:midnightblue; color:white; font-size:200%;">
-<div style="padding:3px;">
-    <a href="https://www.facebook.com/Behealthier-105005388343546"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-	<br>
-    <a href="https://www.linkedin.com/company/71740859/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-	<br>
-    <a href="https://twitter.com/beHEALTHIER1"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-	<br>
-	<a href="https://www.researchgate.net/project/beHEALTHIER"><span class="iconify w3-hover-opacity" data-icon="fa-brands:researchgate" data-inline="false"></span></a>
-</div>
 </div>
 
 
-<!-- Footer -->
-<footer class="w3-center w3-midnight w3-padding-16 w3-hide-small">
-  <p><img src="Images/eu2.png" alt="espa" style="width:50%"></p>
-  <p style="font-size:50%"> </p>
-</footer>
-<footer class="w3-center w3-midnight w3-padding-16 w3-hide-large w3-hide-medium">
-  <p><img src="Images/eu2.png" alt="espa" style="width:100%"></p>
-  <p style="font-size:50%"> </p>
-</footer>
+
+
+  <!-- Footer -->
+  <footer style="background-color: midnightblue; color:white;">
+
+
+    <div class="w3-row-padding ">
+    <!-- All the news, starting from the newest to the oldest -->
+      <div class="w3-col 14 m4 w3-margin-bottom" style="padding-left:5%;">
+
+        <h3 class="w3-border-bottom w3-border-white">
+          <img src="Images/beHEALTHIER_logo_v2.png" width="30" height="25" style="border-radius: 50%;padding-right:5px;">
+          <span class="w3-text-red"><b>be</b><span class="w3-text-blue">HEALTHIER</span></span></h3>
+        <p style=" text-align: justify; text-justify: inter-word;">
+          Το έργο beHEALTHIER (κ.ε. Τ2ΕΔΚ-04207) χρηματοδοτείται στο πλαίσιο της πρόσκλησης
+          “Ερευνώ – Δημιουργώ – Καινοτομώ (Β’ κύκλος)” για την παρέμβαση ΙΙ «Συμπράξεις Επιχειρήσεων
+          με Ερευνητικούς Οργανισμούς από το Εθνικό Συμβούλιο Ποιότητας για την Ανάπτυξη,
+          το Υπουργείο Οικονομίας & Ανάπτυξης και την Ευρωπαϊκή Ένωση.
+        </p>
+        <p><img src="Images/eu2.png" alt="espa" style="width:100%"></p>
+      </div>
+
+      <div class="w3-col 14 m4 w3-margin-bottom" style="padding-right:2%;padding-left:2%;">
+
+        <h3 class="w3-border-bottom w3-border-white">Πληροφορίες</h3>
+        <p style=" text-align: justify; text-justify: inter-word;">Η ανάπτυξη και συντήρηση της ιστοσελίδας
+          γίνεται από την ερευνητική ομάδα Δεδομένων και Νεφοϋπολογιστικής (DAC).
+          <div class="w3-display-container">
+            <a href="https://dac.ds.unipi.gr"  target="_blank" style="text-decoration: none;"><div class="infobtn w3-padding" style="text-align:center;">DAC Website</div></a>
+          </div>
+          <br>
+          <div class="w3-display-container">
+            <a href="mailto:info@behealthier.gr" style="text-decoration: none;"><div class="infobtn w3-padding" style="text-align:center;">info@behealthier.gr</div></a>
+          </div>
+        </p>
+      </div>
+      <div class="w3-col 14 m4 w3-margin-bottom" style="padding-right:5%;">
+
+        <h3 class="w3-border-bottom w3-border-white">Newsletter</h3>
+        <div data-mooform-id="557f4186-9455-4e0f-9bab-45bfe06d1243" ></div>
+        <p style=" text-align: justify; text-justify: inter-word;">
+          <div class="w3-section" style="color:white; font-size:150%;">
+            <div style="padding:3px; text-align:center;">
+              <div style="font-size:50%;">Ακολουθήστε μας:</div>
+              <a href="https://www.facebook.com/Behealthier-105005388343546"><span id="fb" class="iconify" data-icon="fa-brands:facebook" data-inline="false"></span></a>
+
+              <a href="https://www.linkedin.com/company/71740859/"><span id="linkedin" class="iconify" data-icon="fa-brands:linkedin" data-inline="false"></span></a>
+
+              <a href="https://twitter.com/beHEALTHIER1"><span id="twitter" class="iconify" data-icon="fa-brands:twitter" data-inline="false"></span></i></a>
+
+            	<a href="https://www.researchgate.net/project/beHEALTHIER"><span id="researchgate" class="iconify" data-icon="fa-brands:researchgate" data-inline="false"></span></a>
+            </div>
+          </div>
+
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+
+      <div class="w3-display-container">
+        <div class="w3-padding" style="text-align:center;">© 2021 • beHEALTHIER • Data and Cloud Research Group</div>
+      </div>
+    </div>
+    <!-- Copyright -->
+  </footer>
 
 
 <script>
-/* When the user clicks on the button, 
+/* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
