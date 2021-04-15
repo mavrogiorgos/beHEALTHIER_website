@@ -8,7 +8,14 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 <head>
-
+  <script>
+    //load TrackerJS
+    !function(t,n,e,o,a){function d(t){var n=~~(Date.now()/3e5),o=document.createElement(e);o.async=!0,o.src=t+"?ts="+n;var a=document.getElementsByTagName(e)[0];a.parentNode.insertBefore(o,a)}t.MooTrackerObject=a,t[a]=t[a]||function(){return t[a].q?void t[a].q.push(arguments):void(t[a].q=[arguments])},window.attachEvent?window.attachEvent("onload",d.bind(this,o)):window.addEventListener("load",d.bind(this,o),!1)}(window,document,"script","//cdn.stat-track.com/statics/moosend-tracking.min.js","mootrack");
+    //tracker has to be initialized otherwise it will generate warnings and wont sendtracking events
+    mootrack('init', '4bfa78ad5dcd474090ddcc76bd3728ef');
+    // track a view of the current page
+    mootrack('trackPageView');
+  </script>
 
   <link rel="icon" href="Images/beHEALTHIER_logo_v2.png" type="image/gif">
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -565,7 +572,7 @@
     <div class="w3-col 14 m4 w3-margin-bottom" style="padding-right:5%;">
 
       <h3 class="w3-border-bottom w3-border-white">Newsletter</h3>
-      
+
       <p style=" text-align: justify; text-justify: inter-word;">
         <div class="w3-section" style="color:white; font-size:200%;">
           <div style="padding:3px; text-align:center;">
