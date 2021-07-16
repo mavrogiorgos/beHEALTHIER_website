@@ -102,12 +102,14 @@
 	}
 
 
+/*FOR EVERY NEWS UPDATE #more SHOULD BE ADDED */
 	#more {display: none;}
 	#more1 {display: none;}
 	#more2 {display: none;}
 	#more3 {display: none;}
 	#more4 {display: none;}
 	#more5 {display: none;}
+  #more7 {display: none;}
 
   /* footer styling */
   #fb:hover {
@@ -197,8 +199,46 @@
   <div class="w3-container w3-padding-32" id="news">
     <div style="width:80%; margin: auto;">
 		<div class="w3-row-padding ">
+      <!--FOR EVERY NEWS UPDATE UPDATE THE CLASSES, THE FUNCTIONS FOR HIDDING AND SHOWING AND ALSO ADD THOSE FUNCTIONS DOWN IN JS-->
+
+
+      <div class="w3-col 13 quarter w3-margin-bottom news1 news2 news3 news4 news5 news6" id="news7">
+			  <h3>Νέα Δημοσίευση Συνεδρίου</h3>
+			  <p class="w3-opacity">14/07/2020</p>
+			  <img src="Images/paper3.png" class="w3-mobile" style="width:15%; float:left;">
+			  <div id="news_text" style=" text-align: justify; text-justify: inter-word; overflow: hidden;" class="w3-mobile">Η δημοσίευση με τίτλο: "beHEALTHIER: A Microservices
+            Platform for Analyzing and Exploiting Healthcare Data" είναι πλέον διαθέσιμη. Για<span id="dots7">...</span><span id="more7">
+            περισσότερες πληροφορίες μπορείτε να ανατρέξετε <a href="papers.html">εδώ</a>.</span>
+				</div>
+				<br>
+				<a onclick="showMore7(); hide7();" id="myBtn7" class="w3-red w3-padding w3-hover-midnight w3-right" style="cursor: pointer;">Περισσότερα</a>
+			</div>
+
+      <div class="w3-col 13 quarter w3-margin-bottom news1 news2 news3 news4 news6 news7" id="news5">
+			  <h3>Νέα Δημοσίευση Συνεδρίου</h3>
+			  <p class="w3-opacity">07/07/2020</p>
+			  <img src="Images/paper2.png" class="w3-mobile" style="width:15%; float:left;">
+			  <div id="news_text" style=" text-align: justify; text-justify: inter-word; overflow: hidden;" class="w3-mobile">Η δημοσίευση με τίτλο: "Analyzing Collective Knowledge
+          towards Public Health Policy Making" είναι πλέον διαθέσιμη. Για<span id="dots4">...</span><span id="more4">
+            περισσότερες πληροφορίες μπορείτε να ανατρέξετε <a href="papers.html">εδώ</a>.</span>
+				</div>
+				<br>
+				<a onclick="showMore4(); hide4();" id="myBtn4" class="w3-red w3-padding w3-hover-midnight w3-right" style="cursor: pointer;">Περισσότερα</a>
+			</div>
+			<div class="w3-col 13 quarter w3-margin-bottom news1 news2 news3 news4 news5 news7" id="news6">
+			  <h3>Νέα Δημοσίευση Συνεδρίου</h3>
+			  <p class="w3-opacity">01/07/2020</p>
+			  <img src="Images/paper1.png" class="w3-mobile" style="width:15%; float:left;">
+			  <div id="news_text" style=" text-align: justify; text-justify: inter-word; overflow: hidden;" class="w3-mobile">Η δημοσίευση με τίτλο: "An Optimized KDD Process for Collecting
+          and Processing Ingested and Streaming Healthcare Data" είναι<span id="dots5">...</span><span id="more5">
+            πλέον διαθέσιμη. Για περισσότερες πληροφορίες μπορείτε να ανατρέξετε <a href="papers.html">εδώ</a>.</span>
+				</div>
+				<br>
+				<a onclick="showMore5(); hide5();" id="myBtn5" class="w3-red w3-padding w3-hover-midnight w3-right" style="cursor: pointer;">Περισσότερα</a>
+			</div>
+
 		<!-- All the news, starting from the newest to the oldest -->
-			<div class="w3-col 13 quarter w3-margin-bottom news5 news2 news3 news4 news6" id="news1">
+			<div class="w3-col 13 quarter w3-margin-bottom news5 news2 news3 news4 news6 news7" id="news1">
 			  <h3>Παρουσίαση Δημοσίευσης Συνεδρίου</h3>
 			  <p class="w3-opacity">29/05/2021</p>
 			  <img src="Images/aiai2021.png" class="w3-mobile" style="width:15%; float:left;">
@@ -212,7 +252,7 @@
 				<a onclick="showMore(); hide();" id="myBtn" class="w3-red w3-padding w3-hover-midnight w3-right" style="cursor: pointer;">Περισσότερα</a>
 			</div>
 
-			<div class="w3-col 13 quarter w3-margin-bottom news1 news3 news4 news5 news6" id="news2">
+			<div class="w3-col 13 quarter w3-margin-bottom news1 news3 news4 news5 news6 news7" id="news2">
 			  <h3>Παρουσίαση Δημοσίευσης Συνεδρίου</h3>
 			  <p class="w3-opacity">09/04/2021</p>
 			  <img src="Images/cbms2021.png" class="w3-mobile" style="width:15%; float:left;">
@@ -225,7 +265,7 @@
 				<br>
 				<a onclick="showMore1(); hide1();" id="myBtn1" class="w3-red w3-padding w3-hover-midnight w3-right" style="cursor: pointer;">Περισσότερα</a>
 			</div>
-			<div class="w3-col 13 quarter w3-margin-bottom news1 news2 news4 news5 news6" id="news3">
+			<div class="w3-col 13 quarter w3-margin-bottom news1 news2 news4 news5 news6 news7" id="news3">
 			  <h3>Παρουσίαση Δημοσίευσης Συνεδρίου</h3>
 			  <p class="w3-opacity">29/03/2020</p>
 			  <img src="Images/icics.png" class="w3-mobile" style="width:15%; float:left;">
@@ -245,7 +285,7 @@
 
 		<div class="w3-row-padding ">
 
-			<div class="w3-col 13 quarter w3-margin-bottom news1 news2 news3 news5 news6" id="news4">
+			<div class="w3-col 13 quarter w3-margin-bottom news1 news2 news3 news5 news6 news7" id="news4">
 			  <h3>Αρχική συνάντηση</h3>
 			  <p class="w3-opacity">10/07/2020</p>
 			  <img src="Images/kickoff.png" class="w3-mobile" style="width:15%; float:left;">
@@ -257,36 +297,7 @@
 				<a onclick="showMore3(); hide3();" id="myBtn3" class="w3-red w3-padding w3-hover-midnight w3-right" style="cursor: pointer;">Περισσότερα</a>
 			</div>
       <!--
-			<div class="w3-col 13 quarter w3-margin-bottom news1 news2 news3 news4 news6" id="news5">
-			  <h3>Αρχική συνάντηση</h3>
-			  <p class="w3-opacity">10/07/2020</p>
-			  <img src="Images/kickoff.png" class="w3-mobile" style="width:15%; float:left;">
-			  <div style=" text-align: justify; text-justify: inter-word; overflow: hidden;" class="w3-mobile">Πραγματοποιήθηκε με επιτυχία το kick-off meeting του beHEALTHIER, με συμμετοχή όλων των φορέων. Συζητήθηκαν βασικά ζητήματα που αφορούν το έργο,
-					όπως το project coordination και το technical coordination. Δόθηκαν<span id="dots4">...</span><span id="more4"> κατευθύνσεις οι οποίες καθορίζουν την άριστη συνεργασία μεταξύ των φορέων.
-					Τέλος, ορίστικαν με σαφήνεια οι στόχοι που καλείται να επιτύχει το έργο.Πραγματοποιήθηκε με επιτυχία το kick-off meeting του beHEALTHIER, με συμμετοχή όλων των φορέων. Συζητήθηκαν βασικά ζητήματα που αφορούν το έργο,
-					όπως το project coordination και το technical coordination. Δόθηκαν κατευθύνσεις οι οποίες καθορίζουν την άριστη συνεργασία μεταξύ των φορέων.
-					Τέλος, ορίστικαν με σαφήνεια οι στόχοι που καλείται να επιτύχει το έργο.Πραγματοποιήθηκε με επιτυχία το kick-off meeting του beHEALTHIER, με συμμετοχή όλων των φορέων. Συζητήθηκαν βασικά ζητήματα που αφορούν το έργο,
-					όπως το project coordination και το technical coordination. Δόθηκαν κατευθύνσεις οι οποίες καθορίζουν την άριστη συνεργασία μεταξύ των φορέων.
-					Τέλος, ορίστικαν με σαφήνεια οι στόχοι που καλείται να επιτύχει το έργο.</span>
-				</div>
-				<br>
-				<a onclick="showMore4(); hide4();" id="myBtn4" class="w3-red w3-padding w3-hover-midnight w3-right" style="cursor: pointer;">Περισσότερα</a>
-			</div>
-			<div class="w3-col 13 quarter w3-margin-bottom news1 news2 news3 news4 news5" id="news6">
-			  <h3>Αρχική συνάντηση</h3>
-			  <p class="w3-opacity">10/07/2020</p>
-			  <img src="Images/kickoff.png" class="w3-mobile" style="width:15%; float:left;">
-			  <div style=" text-align: justify; text-justify: inter-word; overflow: hidden;" class="w3-mobile">Πραγματοποιήθηκε με επιτυχία το kick-off meeting του beHEALTHIER, με συμμετοχή όλων των φορέων. Συζητήθηκαν βασικά ζητήματα που αφορούν το έργο,
-					όπως το project coordination και το technical coordination. Δόθηκαν<span id="dots5">...</span><span id="more5"> κατευθύνσεις οι οποίες καθορίζουν την άριστη συνεργασία μεταξύ των φορέων.
-					Τέλος, ορίστικαν με σαφήνεια οι στόχοι που καλείται να επιτύχει το έργο.Πραγματοποιήθηκε με επιτυχία το kick-off meeting του beHEALTHIER, με συμμετοχή όλων των φορέων. Συζητήθηκαν βασικά ζητήματα που αφορούν το έργο,
-					όπως το project coordination και το technical coordination. Δόθηκαν κατευθύνσεις οι οποίες καθορίζουν την άριστη συνεργασία μεταξύ των φορέων.
-					Τέλος, ορίστικαν με σαφήνεια οι στόχοι που καλείται να επιτύχει το έργο.Πραγματοποιήθηκε με επιτυχία το kick-off meeting του beHEALTHIER, με συμμετοχή όλων των φορέων. Συζητήθηκαν βασικά ζητήματα που αφορούν το έργο,
-					όπως το project coordination και το technical coordination. Δόθηκαν κατευθύνσεις οι οποίες καθορίζουν την άριστη συνεργασία μεταξύ των φορέων.
-					Τέλος, ορίστικαν με σαφήνεια οι στόχοι που καλείται να επιτύχει το έργο.</span>
-				</div>
-				<br>
-				<a onclick="showMore5(); hide5();" id="myBtn5" class="w3-red w3-padding w3-hover-midnight w3-right" style="cursor: pointer;">Περισσότερα</a>
-			</div>
+
       -->
 		</div>
 
@@ -506,7 +517,7 @@ function showMore7() {
     moreText.style.display = "none";
   } else {
     dots.style.display = "none";
-    btnText.innerHTML = "Λιγότερα";
+    btnText.innerHTML = "<a href='news.html' style='text-decoration:none;'>Επιστροφή στα Νέα</a>";
     moreText.style.display = "inline";
   }
 }
@@ -548,6 +559,13 @@ function hide4() {
 }
 function hide5() {
   var divsToHide = document.getElementsByClassName("news6"); //divsToHide is an array
+    for(var i = 0; i < divsToHide.length; i++){
+        divsToHide[i].style.display = "none"; // depending on what you're doing
+    }
+}
+
+function hide7() {
+  var divsToHide = document.getElementsByClassName("news7"); //divsToHide is an array
     for(var i = 0; i < divsToHide.length; i++){
         divsToHide[i].style.display = "none"; // depending on what you're doing
     }
