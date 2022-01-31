@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+<title>Δημοσιεύσεις | beHEALTHIER</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+<head>
+
+  <script>
+    //load TrackerJS
+    !function(t,n,e,o,a){function d(t){var n=~~(Date.now()/3e5),o=document.createElement(e);o.async=!0,o.src=t+"?ts="+n;var a=document.getElementsByTagName(e)[0];a.parentNode.insertBefore(o,a)}t.MooTrackerObject=a,t[a]=t[a]||function(){return t[a].q?void t[a].q.push(arguments):void(t[a].q=[arguments])},window.attachEvent?window.attachEvent("onload",d.bind(this,o)):window.addEventListener("load",d.bind(this,o),!1)}(window,document,"script","//cdn.stat-track.com/statics/moosend-tracking.min.js","mootrack");
+    //tracker has to be initialized otherwise it will generate warnings and wont sendtracking events
+    mootrack('init', '4bfa78ad5dcd474090ddcc76bd3728ef');
+    // track a view of the current page
+    mootrack('trackPageView');
+  </script>
+
+  <link rel="icon" href="Images/beHEALTHIER_logo_v2.png" type="image/gif">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-9DWB7Y8236"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-9DWB7Y8236');
+	</script>
+
+  <style>
+	.navbar {
+	  overflow: hidden;
+	  background-color: #333;
+	  font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.navbar a {
+	  float: left;
+	  font-size: 16px;
+	  color: white;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	}
+
+	.dropdown {
+	  float: left;
+	  overflow: hidden;
+	}
+
+	.dropdown .dropbtn {
+	  cursor: pointer;
+	  font-size: 16px;
+	  border: none;
+	  outline: none;
+	  color: white;
+	  padding: 1px 1px;
+	  background-color: inherit;
+	  font-family: inherit;
+	  margin: 0;
+	}
+
+	.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+	  background-color: midnightblue;
+	}
+
+	.dropdown-content {
+	  display: none;
+	  position: absolute;
+	  background-color: #f9f9f9;
+	  min-width: 160px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
+	}
+
+	.dropdown-content a {
+	  float: none;
+	  color: black;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	  text-align: left;
+	}
+
+	.dropdown-content a:hover {
+	  background-color: #ddd;
+	}
+
+	.show {
+	  display: block;
+	}
+
+
+
+	#menu {
+	  width: 30px;
+	  height: 3px;
+	  background-color: white;
+	  margin: 3px 0px;
+	}
+
+
+	#more {display: none;}
+	#more1 {display: none;}
+	#more2 {display: none;}
+	#more3 {display: none;}
+	#more4 {display: none;}
+	#more5 {display: none;}
+	#more6 {display: none;}
+
+
+
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+
+.container {
+  position: relative;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(0,12,24);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  opacity:0.8;
+}
+
+.container:hover .overlay {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* footer styling */
+#fb:hover {
+  color: #4267B2;
+}
+
+#linkedin:hover {
+  color: #2867B2;
+}
+
+#twitter:hover {
+  color: #1DA1F2;
+}
+
+#researchgate:hover {
+  color: #04cbbb;
+}
+
+.infobtn {
+  background-color: rgba(173,216,230,0.2);
+  border-radius: 25px;
+}
+
+.infobtn:hover {
+  background-color: rgba(173,216,230,0.5);
+}
+
+	</style>
+
+
+
+
+</head>
+<body onload="showMore3();">
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-midnight w3-padding w3-card">
+
+    <a href="https://behealthier.gr" class="w3-bar-item w3-left"><img src="Images/beHEALTHIER_logo_v1.png" width="40" height="40" style="border-radius: 50%;"></a>
+	<div class="dropdown w3-right">
+	  <button class="dropbtn w3-hide-large w3-hide-medium" onclick="myFunction()">
+	    <div id="menu"></div>
+		<div id="menu"></div>
+		<div id="menu"></div>
+		<div id="menu"></div>
+		<div id="menu"></div>
+		<!--<i class="fa fa-caret-down"></i>-->
+	  </button>
+	  <div class="dropdown-content w3-hide-large w3-hide-medium" id="myDropdown" style="right:0">
+		<a href="info.html" class="w3-bar-item w3-hover-red w3-button">Πληροφορίες</a>
+		<a href="partners.html" class="w3-bar-item w3-hover-red w3-button">Συμμετέχοντες</a>
+		<a href="papers.html" class="w3-bar-item w3-hover-red w3-button">Δημοσιεύσεις</a>
+		<a href="news.html" class="w3-bar-item w3-hover-red w3-button">Νέα</a>
+		<a href="mailto:info@behealthier.gr" class="w3-bar-item w3-hover-red w3-button">Επικοινωνία</a>
+	  </div>
+	  <div class="w3-right w3-hide-small">
+	  <a href="info.html" class="w3-bar-item w3-hover-red w3-button">Πληροφορίες</a>
+      <a href="partners.html" class="w3-bar-item w3-hover-red w3-button">Συμμετέχοντες</a>
+	  <a href="papers.html" class="w3-bar-item w3-hover-red w3-button">Δημοσιεύσεις</a>
+      <a href="news.html" class="w3-bar-item w3-hover-red w3-button">Νέα</a>
+	  <a href="mailto:info@behealthier.gr" class="w3-bar-item w3-hover-red w3-button">Επικοινωνία</a>
+    </div>
+    </div>
+
+</div>
+
+<!-- Header -->
+<div class="w3-display-container w3-content w3-wide" style="max-width:100%; height:300px; background-color:#35a6d8; color:white;">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge ">Δημοσιεύσεις</h1>
+  </div>
+</div>
+
+
+
+
+
+
+<div style="">
+<div class="w3-container w3-padding-32 w3-light-grey" id="news" style="min-height: 100vh;">
+
+
+    <div style="width:80%; margin:auto;">
+		<div class="w3-row-padding ">
+
+      <div class="w3-col 14 m4 w3-margin-bottom news1 news2 news4 news5 news6" id="news3">
+			  <img src="Images/paper4.png" class="w3-mobile" style="width:100%" id="figure3">
+			  <h4>A Comparative Study of MongoDB, ArangoDB and CouchDB for Big Data Storage</h4>
+			  <p class="w3-opacity">15/08/2021</p>
+			  <p style=" text-align: justify; text-justify: inter-word;">
+          <b>Περίληψη</b>
+          <br><br>
+          A distinctive aspect of the current era is the ferocious amount of data that is generated and processed in a daily basis. There is no wonder that this epoch is generally characterized as
+          <span id="dots3">...</span><span id="more3">
+          the “Era of Big Data”. Thus, many enterprises and research initiatives strive to find a way to effectively and efficiently collect, store and analyze Big Data in order to improve their services and make efficient decisions. Those approaches refer to several domains such as healthcare, transportation, governance, or insurance. Towards this direction, in this paper we contribute into the selection of the most appropriate database for efficiently storing and retrieving Big Data. More specifically, taking into account the nature of Big Data and the main categories of databases that currently exist, three (3) NoSQL document-based databases were considered for this comparative study, namely the ArangoDB, the MongoDB and the CouchDB. The performance of these databases was measured based on specific metrics and criteria, including the total execution time for the same CRUD operations and their corresponding demands for resources, concluding to the most suitable database for storing Big Data.
+            <br><br>
+            <b>Συγγραφείς</b>
+            <br><br>
+            Konstantinos Mavrogiorgos, Athanasios Kiourtis, Argyro Mavrogiorgou, Dimosthenis Kyriazis
+            <br><br>
+          </span>
+				</p>
+				<a onclick="showMore3(); hide2(); showPaperLink();" id="myBtn3" class="w3-red w3-padding w3-hover-midnight w3-right" style="cursor: pointer;">Περισσότερα</a>
+        <a href = 'https://dl.acm.org/doi/abs/10.1145/3481646.3481648' class="w3-blue w3-padding w3-hover-midnight paper_link w3-hide-small" style="cursor: pointer; text-decoration: none;" target="_blank">Αίτημα Πρόσβασης</a>
+        <br><br><br>
+        <a href = 'https://dl.acm.org/doi/abs/10.1145/3481646.3481648' class="w3-blue w3-padding w3-hover-midnight paper_link w3-hide-medium w3-hide-large" style="cursor: pointer; text-decoration: none;" target="_blank">Αίτημα Πρόσβασης</a>
+			</div>
+
+
+	</div>
+  </div>
+
+</div>
+
+<!-- End page content -->
+</div>
+
+
+
+
+<!-- Footer -->
+<footer style="background-color: midnightblue; color:white; font-size:14px;">
+  <br><br>
+
+
+  <div class="w3-row-padding " style="width:80%; margin:auto;">
+  <!-- All the news, starting from the newest to the oldest -->
+    <div class="w3-col 14 m4 w3-margin-bottom" >
+
+      <h4 class="w3-border-bottom w3-border-white">
+        <img src="Images/beHEALTHIER_logo_v2.png" width="30" height="25" style="border-radius: 50%;padding-right:5px;">
+        <span class="w3-text-red"><b>be</b><span class="w3-text-blue">HEALTHIER</span></span></h4>
+      <p style=" text-align: justify; text-justify: inter-word;">
+        Το έργο beHEALTHIER (κ.ε. Τ2ΕΔΚ-04207) χρηματοδοτείται στο πλαίσιο της πρόσκλησης
+        "Ερευνώ – Δημιουργώ – Καινοτομώ (Β’ κύκλος)" για την παρέμβαση ΙΙ "Συμπράξεις Επιχειρήσεων
+        με Ερευνητικούς Οργανισμούς από το Εθνικό Συμβούλιο Ποιότητας για την Ανάπτυξη,
+        το Υπουργείο Οικονομίας & Ανάπτυξης και την Ευρωπαϊκή Ένωση".
+      </p>
+      <p><img src="Images/eu2.png" alt="espa" style="width:100%"></p>
+    </div>
+
+    <div class="w3-col 14 m4 w3-margin-bottom" style="padding-right:2%;padding-left:2%;">
+
+      <h4 class="w3-border-bottom w3-border-white">Πληροφορίες</h4>
+      <p style=" text-align: justify; text-justify: inter-word;">Η ανάπτυξη και συντήρηση της ιστοσελίδας γίνεται από την ερευνητική ομάδα
+        Δεδομένων και Νεφοϋπολογιστικής (Data and Cloud Research Group (DAC)).
+        <br><br>
+        <div class="w3-display-container">
+          <a href="https://dac.ds.unipi.gr"  target="_blank" style="text-decoration: none;"><div class="infobtn w3-padding" style="text-align:center;">DAC Website</div></a>
+        </div>
+        <br>
+        <div class="w3-display-container">
+          <a href="mailto:info@behealthier.gr" style="text-decoration: none;"><div class="infobtn w3-padding" style="text-align:center;">info@behealthier.gr</div></a>
+        </div>
+      </p>
+    </div>
+    <div class="w3-col 14 m4 w3-margin-bottom" >
+      <h4 class="w3-border-bottom w3-border-white" style="text-align:left;">Ακολουθήστε μας</h4>
+      <p style=" text-align: justify; text-justify: inter-word;">
+        <div class="w3-section" style="color:white; font-size:190%;">
+          <div style=" text-align:center;">
+            <a href="https://www.facebook.com/Behealthier-105005388343546"><span id="fb" class="iconify" data-icon="fa-brands:facebook" data-inline="false"></span></a>
+            <a href="https://twitter.com/beHEALTHIER1"><span id="twitter" class="iconify" data-icon="fa-brands:twitter" data-inline="false"></span></i></a>
+            <a href="https://www.linkedin.com/company/71740859/"><span id="linkedin" class="iconify" data-icon="fa-brands:linkedin" data-inline="false"></span></a>
+            <a href="https://www.researchgate.net/project/beHEALTHIER"><span id="researchgate" class="iconify" data-icon="fa-brands:researchgate" data-inline="false"></span></a>
+          </div>
+        </div>
+
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+
+    <div class="w3-display-container">
+      <div class="w3-padding" style="text-align:center;">© 2021 • beHEALTHIER • Data and Cloud Research Group</div>
+    </div>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+
+
+
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+
+function showMore() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+  var paper_links_to_show = document.getElementsByClassName("paper_link");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Περισσότερα";
+    moreText.style.display = "none";
+    paper_links_to_show.style.display="none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "<a href='papers.html' style='text-decoration:none;'>Επιστροφή στις Δημοσιεύσεις</a>";
+    moreText.style.display = "inline";
+    paper_links_to_show.style.display = "block";
+  }
+}
+
+
+function showMore1() {
+  var dots = document.getElementById("dots1");
+  var moreText = document.getElementById("more1");
+  var btnText = document.getElementById("myBtn1");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Περισσότερα";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "<a href='papers.html' style='text-decoration:none;'>Επιστροφή στις Δημοσιεύσεις</a>";
+    moreText.style.display = "inline";
+	document.getElementById("news1").classList.remove('14');
+	document.getElementById("news1").classList.remove('m4');
+	document.getElementById("figure1").style.width = null;
+	document.getElementById("figure1").style.width = '30%';
+  }
+}
+
+function showMore2() {
+  var dots = document.getElementById("dots2");
+  var moreText = document.getElementById("more2");
+  var btnText = document.getElementById("myBtn2");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Περισσότερα";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "<a href='papers.html' style='text-decoration:none;'>Επιστροφή στις Δημοσιεύσεις</a>";
+    moreText.style.display = "inline";
+	document.getElementById("news2").classList.remove('14');
+	document.getElementById("news2").classList.remove('m4');
+	document.getElementById("figure2").style.width = null;
+	document.getElementById("figure2").style.width = '30%';
+  }
+}
+
+function showMore3() {
+  var dots = document.getElementById("dots3");
+  var moreText = document.getElementById("more3");
+  var btnText = document.getElementById("myBtn3");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Περισσότερα";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "<a href='papers.html' style='text-decoration:none;'>Επιστροφή στις Δημοσιεύσεις</a>";
+    moreText.style.display = "inline";
+	document.getElementById("news3").classList.remove('14');
+	document.getElementById("news3").classList.remove('m4');
+	document.getElementById("figure3").style.width = null;
+	document.getElementById("figure3").style.width = '30%';
+  }
+}
+
+function showMore4() {
+  var dots = document.getElementById("dots4");
+  var moreText = document.getElementById("more4");
+  var btnText = document.getElementById("myBtn4");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Περισσότερα";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "<a href='papers.html' style='text-decoration:none;'>Επιστροφή στις Δημοσιεύσεις</a>";
+    moreText.style.display = "inline";
+	document.getElementById("news4").classList.remove('14');
+	document.getElementById("news4").classList.remove('m4');
+	document.getElementById("figure4").style.width = null;
+	document.getElementById("figure4").style.width = '30%';
+  }
+}
+
+
+function showMore5() {
+  var dots = document.getElementById("dots5");
+  var moreText = document.getElementById("more5");
+  var btnText = document.getElementById("myBtn5");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Περισσότερα";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "<a href='papers.html' style='text-decoration:none;'>Επιστροφή στις Δημοσιεύσεις</a>";
+    moreText.style.display = "inline";
+	document.getElementById("news5").classList.remove('14');
+	document.getElementById("news5").classList.remove('m4');
+	document.getElementById("figure5").style.width = null;
+	document.getElementById("figure5").style.width = '30%';
+  }
+}
+
+function showMore6() {
+  var dots = document.getElementById("dots6");
+  var moreText = document.getElementById("more6");
+  var btnText = document.getElementById("myBtn6");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Περισσότερα";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "<a href='papers.html' style='text-decoration:none;'>Επιστροφή στις Δημοσιεύσεις</a>";
+    moreText.style.display = "inline";
+	document.getElementById("news6").classList.remove('14');
+	document.getElementById("news6").classList.remove('m4');
+	document.getElementById("figure6").style.width = null;
+	document.getElementById("figure6").style.width = '30%';
+  }
+}
+
+
+
+
+
+
+
+// Hide all elements with class="containerTab", except for the one that matches the clickable grid column
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+
+function showPaperLink(){
+  var paper_links_to_hide = document.getElementsByClassName("paper_link");
+  for(var i = 0; i < paper_links_to_hide.length; i++){
+      paper_links_to_hide[i].style.visibility = "visible"; // depending on what you're doing
+  }
+}
+
+
+
+
+
+
+<!-- HIDE FUNCTIONS -->
+function hidePapers(){
+  var paper_links_to_hide = document.getElementsByClassName("paper_link");
+  for(var i = 0; i < paper_links_to_hide.length; i++){
+      paper_links_to_hide[i].style.visibility = "hidden"; // depending on what you're doing
+  }
+}
+function hide() {
+  var divsToHide = document.getElementsByClassName("news1"); //divsToHide is an array
+    for(var i = 0; i < divsToHide.length; i++){
+        divsToHide[i].style.display = "none"; // depending on what you're doing
+    }
+}
+
+function hide1() {
+  var divsToHide = document.getElementsByClassName("news2"); //divsToHide is an array
+    for(var i = 0; i < divsToHide.length; i++){
+        divsToHide[i].style.display = "none"; // depending on what you're doing
+    }
+}
+
+function hide2() {
+  var divsToHide = document.getElementsByClassName("news3"); //divsToHide is an array
+    for(var i = 0; i < divsToHide.length; i++){
+        divsToHide[i].style.display = "none"; // depending on what you're doing
+    }
+}
+
+function hide3() {
+  var divsToHide = document.getElementsByClassName("news4"); //divsToHide is an array
+    for(var i = 0; i < divsToHide.length; i++){
+        divsToHide[i].style.display = "none"; // depending on what you're doing
+    }
+}
+function hide4() {
+  var divsToHide = document.getElementsByClassName("news5"); //divsToHide is an array
+    for(var i = 0; i < divsToHide.length; i++){
+        divsToHide[i].style.display = "none"; // depending on what you're doing
+    }
+}
+function hide5() {
+  var divsToHide = document.getElementsByClassName("news6"); //divsToHide is an array
+    for(var i = 0; i < divsToHide.length; i++){
+        divsToHide[i].style.display = "none"; // depending on what you're doing
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
