@@ -120,6 +120,14 @@
   #more15 {display: none;}
   #more16 {display: none;}
   #more17 {display: none;}
+  #more18 {display: none;}
+  #more19 {display: none;}
+  #more20 {display: none;}
+  #more21 {display: none;}
+  #more22 {display: none;}
+  #more23 {display: none;}
+  #more24 {display: none;}
+  #more25 {display: none;}
 
   /* footer styling */
   #fb:hover {
@@ -210,7 +218,48 @@
     <div style="width:80%; margin: auto;">
 		<div class="w3-row-padding ">
       <!--FOR EVERY NEWS UPDATE UPDATE THE CLASSES, THE FUNCTIONS FOR HIDDING AND SHOWING AND ALSO ADD THOSE FUNCTIONS DOWN IN JS-->
-      <!--CURRENTLY AT NEWS 13-->
+      <!--CURRENTLY AT NEWS 17-->
+      <div class="w3-col 13 quarter w3-margin-bottom news1 news2 news3 news4 news5 news6
+      news7 news8 news9 news10 news11 news12 news13 news14 news15 news16 news17 news18 news19" id="news20">
+			  <h3>Νέο Άρθρο Περιοδικού</h3>
+			  <p class="w3-opacity">08/11/2022</p>
+			  <img src="Images/paper13.png" class="w3-mobile" style="width:15%; float:left;">
+			  <div id="news_text" style=" text-align: justify; text-justify: inter-word; overflow: hidden;" class="w3-mobile">Το άρθρο με τίτλο:
+          "A Catalogue of Machine Learning Algorithms for Healthcare Risk Predictions" είναι πλέον
+          διαθέσιμο. Για<span id="dots20">...</span><span id="more20">
+            περισσότερες πληροφορίες μπορείτε να ανατρέξετε <a href="papers.html">εδώ</a>.</span>
+				</div>
+				<br>
+				<a onclick="showMore20(); hide20();" id="myBtn20" class="w3-red w3-padding w3-hover-midnight w3-right" style="cursor: pointer;">Περισσότερα</a>
+			</div>
+
+      <div class="w3-col 13 quarter w3-margin-bottom news1 news2 news3 news4 news5 news6
+      news7 news8 news9 news10 news11 news12 news13 news14 news15 news16 news17 news18" id="news19">
+			  <h3>Νέα Δημοσίευση Συνεδρίου</h3>
+			  <p class="w3-opacity">01/10/2022</p>
+			  <img src="Images/paper12.png" class="w3-mobile" style="width:15%; float:left;">
+			  <div id="news_text" style=" text-align: justify; text-justify: inter-word; overflow: hidden;" class="w3-mobile">Η δημοσίευση με τίτλο:
+           "A Comparative Study of Monolithic and Microservices Architectures in Machine Learning Scenarios"
+           είναι πλέον διαθέσιμη. Για<span id="dots19">...</span><span id="more19">
+            περισσότερες πληροφορίες μπορείτε να ανατρέξετε <a href="papers.html">εδώ</a>.</span>
+				</div>
+				<br>
+				<a onclick="showMore19(); hide19();" id="myBtn19" class="w3-red w3-padding w3-hover-midnight w3-right" style="cursor: pointer;">Περισσότερα</a>
+			</div>
+
+      <div class="w3-col 13 quarter w3-margin-bottom news1 news2 news3 news4 news5 news6
+      news7 news8 news9 news10 news11 news12 news13 news14 news15 news16 news17" id="news18">
+			  <h3>Νέα Δημοσίευση Συνεδρίου</h3>
+			  <p class="w3-opacity">01/10/2022</p>
+			  <img src="Images/paper11.png" class="w3-mobile" style="width:15%; float:left;">
+			  <div id="news_text" style=" text-align: justify; text-justify: inter-word; overflow: hidden;" class="w3-mobile">Η δημοσίευση με τίτλο:
+          "Automated Rule-Based Data Cleaning Using NLP" είναι πλέον διαθέσιμη.
+          Για<span id="dots18">...</span><span id="more18">
+            περισσότερες πληροφορίες μπορείτε να ανατρέξετε <a href="papers.html">εδώ</a>.</span>
+				</div>
+				<br>
+				<a onclick="showMore18(); hide18();" id="myBtn18" class="w3-red w3-padding w3-hover-midnight w3-right" style="cursor: pointer;">Περισσότερα</a>
+			</div>
 
       <div class="w3-col 13 quarter w3-margin-bottom news1 news2 news3 news4 news5 news6
       news7 news8 news9 news10 news11 news12 news13 news14 news15 news16" id="news17">
@@ -853,6 +902,102 @@ function showMore19() {
   }
 }
 
+function showMore20() {
+  var dots = document.getElementById("dots20");
+  var moreText = document.getElementById("more20");
+  var btnText = document.getElementById("myBtn20");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Περισσότερα";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "<a href='news.html' style='text-decoration:none;'>Επιστροφή στα Νέα</a>";
+    moreText.style.display = "inline";
+  }
+}
+
+function showMore21() {
+  var dots = document.getElementById("dots21");
+  var moreText = document.getElementById("more21");
+  var btnText = document.getElementById("myBtn21");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Περισσότερα";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "<a href='news.html' style='text-decoration:none;'>Επιστροφή στα Νέα</a>";
+    moreText.style.display = "inline";
+  }
+}
+
+function showMore22() {
+  var dots = document.getElementById("dots22");
+  var moreText = document.getElementById("more22");
+  var btnText = document.getElementById("myBtn22");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Περισσότερα";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "<a href='news.html' style='text-decoration:none;'>Επιστροφή στα Νέα</a>";
+    moreText.style.display = "inline";
+  }
+}
+
+function showMore23() {
+  var dots = document.getElementById("dots23");
+  var moreText = document.getElementById("more23");
+  var btnText = document.getElementById("myBtn23");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Περισσότερα";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "<a href='news.html' style='text-decoration:none;'>Επιστροφή στα Νέα</a>";
+    moreText.style.display = "inline";
+  }
+}
+
+function showMore24() {
+  var dots = document.getElementById("dots24");
+  var moreText = document.getElementById("more24");
+  var btnText = document.getElementById("myBtn24");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Περισσότερα";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "<a href='news.html' style='text-decoration:none;'>Επιστροφή στα Νέα</a>";
+    moreText.style.display = "inline";
+  }
+}
+
+function showMore25() {
+  var dots = document.getElementById("dots25");
+  var moreText = document.getElementById("more25");
+  var btnText = document.getElementById("myBtn25");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Περισσότερα";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "<a href='news.html' style='text-decoration:none;'>Επιστροφή στα Νέα</a>";
+    moreText.style.display = "inline";
+  }
+}
+
 
 //HIDE FUNCTIONS
 function hide() {
@@ -981,6 +1126,48 @@ function hide18() {
 
 function hide19() {
   var divsToHide = document.getElementsByClassName("news19"); //divsToHide is an array
+    for(var i = 0; i < divsToHide.length; i++){
+        divsToHide[i].style.display = "none"; // depending on what you're doing
+    }
+}
+
+function hide20() {
+  var divsToHide = document.getElementsByClassName("news20"); //divsToHide is an array
+    for(var i = 0; i < divsToHide.length; i++){
+        divsToHide[i].style.display = "none"; // depending on what you're doing
+    }
+}
+
+function hide21() {
+  var divsToHide = document.getElementsByClassName("news21"); //divsToHide is an array
+    for(var i = 0; i < divsToHide.length; i++){
+        divsToHide[i].style.display = "none"; // depending on what you're doing
+    }
+}
+
+function hide22() {
+  var divsToHide = document.getElementsByClassName("news22"); //divsToHide is an array
+    for(var i = 0; i < divsToHide.length; i++){
+        divsToHide[i].style.display = "none"; // depending on what you're doing
+    }
+}
+
+function hide23() {
+  var divsToHide = document.getElementsByClassName("news23"); //divsToHide is an array
+    for(var i = 0; i < divsToHide.length; i++){
+        divsToHide[i].style.display = "none"; // depending on what you're doing
+    }
+}
+
+function hide24() {
+  var divsToHide = document.getElementsByClassName("news24"); //divsToHide is an array
+    for(var i = 0; i < divsToHide.length; i++){
+        divsToHide[i].style.display = "none"; // depending on what you're doing
+    }
+}
+
+function hide25() {
+  var divsToHide = document.getElementsByClassName("news25"); //divsToHide is an array
     for(var i = 0; i < divsToHide.length; i++){
         divsToHide[i].style.display = "none"; // depending on what you're doing
     }
